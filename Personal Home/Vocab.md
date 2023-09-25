@@ -183,6 +183,9 @@ disingenuous : a person who speaks dishonestly.
 misnomer : a name that does not suit what it refers to. 
 contention : the disagreement that results from opposing arguments. 
 futile : having no effect. 
+congenial : friendly or neutral. 
+belie : cover something up , mask.
+
 
 
 
