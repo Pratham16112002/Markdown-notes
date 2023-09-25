@@ -154,6 +154,18 @@ juxtaposition : comparison.
 succumb : surrender or give way. 
 abate : ( something unpleasant or severe) become less intense or widespread (covid is abating ).
 abjure : to give up  , abandon ( abjure this area ). 
+arcane : understood by few , mysterious or secret. 
+arduous : difficult. 
+artless : without effort or pretentiousness ; natural and simple. 
+ascetic : a person who is very self discipline and abstention from all forms of indulgence, typically for religious regions. 
+assuage : at ease , calm. 
+Bucolic : pleasant countryside location. 
+burgeon : begin to grow or increase rapidly. 
+cacophonous : producing harsh , discordant mixture of sounds.
+
+
+
+
 
 
 
