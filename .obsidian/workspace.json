@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Personal Home/Vocab.md",
+                "file": "Programming/Pointers.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Personal Home/Vocab.md",
+                "file": "Programming/Pointers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Personal Home/Vocab.md",
+                "file": "Programming/Pointers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Personal Home/Vocab.md"
+                "file": "Programming/Pointers.md"
               }
             }
           }
@@ -150,6 +150,8 @@
   "active": "6ea58b91f6882293",
   "lastOpenFiles": [
     "README.md",
+    "Programming/Pointers.md",
+    "Personal Home/Vocab.md",
     "Unconfirmed 871218.crdownload",
     "LICENSE.txt",
     "LICENSE.txt.crdownload",
@@ -182,7 +184,6 @@
     "DSA/Graphs/Graphs.md",
     "Development/React Native.md",
     "Development/Development.md",
-    "Personal Home/Vocab.md",
     "Personal Home/Personal.md",
     "DSA/Graphs/Shortest Path Algorithm.md",
     "Graphs a2b0db0fea964679a93d7f2d50065f75/MST Disjoint Set 1437637b89a946d8a3a58f71b5fae7f9.md",
@@ -190,7 +191,6 @@
     "DSA/Untitled 2.png",
     "DSA/Untitled.png",
     "DSA/Untitled 3.png",
-    "DSA/Graphs/Shortest Path Algorithm and Questions.md",
     "DSA/Untitled 1.png",
     "Untitled 6.png",
     "Untitled 4.png",

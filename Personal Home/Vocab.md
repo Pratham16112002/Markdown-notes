@@ -1,39 +1,22 @@
 # Vocabulary
 
 envy : → Jealousy 
-
 reckon → to think or conclude. 
-
-Polarization → 
-
+Polarization → Division.
 Utopia → an ideal perfect place. 
-
 Oblivion → act of being forgetfulness 
-
 Sovereignty → Complete independence 
-
 Clandestine → kept secret or done secretively 
-
 Stoicism → the quality of experiencing pain or trouble without complaining or showing your emotions. 
-
 resentment→ a feeling of angry displeasure at something regarded as a wrong, insult, or injury.
-
 mason → a person who work with brick and stones. 
-
 philanthropist→ a person who have private initiatives for public good , and focusing on a quality life.
-
 Dossier → Information about the subject or person. 
-
 Liturgy→ is a customary public ritual of worship performed by a religious group. 
-
 Sinster → giving the impression that something harmful or evil is happening or will happen.
-
 Pernicious→ harmful or injurious 
-
 Injunction → authoritative warning or order.
-
 Vexed → annoyed, frustrated, or worried.
-
 Choir → an organized group of singers, especially one that takes part in church services or performs in public.
 Tasered 
 Taciturn : less talkative. 
@@ -44,13 +27,9 @@ Sanctimonious
 Burglarized
 Mortgage 
 Paralegal 
-
 Summoned : Order someone to be present . 
-
 Meagre : very small amount . 
-
 Slither : to move easily and quickly across the a surface while twisting or curving. 
-
 Merely : used to emphasize that you mean exactly what you are saying nothing more. 
 Impeccable : something with high standards. 
 Bizarre : very strange.
