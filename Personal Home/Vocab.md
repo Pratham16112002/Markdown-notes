@@ -162,7 +162,8 @@ assuage : at ease , calm.
 Bucolic : pleasant countryside location. 
 burgeon : begin to grow or increase rapidly. 
 cacophonous : producing harsh , discordant mixture of sounds.
-
+canonize : officially declared to be a saint. 
+censure 
 
 
 
