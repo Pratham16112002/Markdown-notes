@@ -34,7 +34,8 @@ int main() {
 ```
 The above code is giving me a error, because I am trying to write a value of void pointers. 
 
-## New keyword
+## New 
+It is not a keyword its a operator.
 The main purpose of this keyword is to allocate memory in heap. 
 The size allocated is dependent what we write after the new keyword. 
 ```cpp
@@ -44,3 +45,10 @@ char* buffer = new char[8];
 The above raise a system call  to check weather 8 bytes of memory is available in the memory, once found the this keyword return pointer to that memory location. 
 
 It also calls the constructor of the class on the which new keyword is being called on. 
+```cpp
+Entity *entity1 = new Entity();
+
+Entity *entity2 = (Entity *)malloc(sizeof(Entity));
+
+```
+The first line will call the constructor defined in the Entity class where as the second line will not call the constructor but will allocate the memory in heap. 
