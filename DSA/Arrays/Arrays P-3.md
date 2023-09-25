@@ -1,0 +1,88 @@
+
+## Minimum array length required to after pair removal
+<span style='color:lightgreen;'> Very good question</span> 
+
+Input :  `nums = [1,3,4,9]`
+
+Output : `0`
+
+[Link to the problem 🍻 ](https://leetcode.com/problems/minimum-array-length-after-pair-removals/)
+
+Approach : 
+
+1. We need to create a map to count the frequency of each element in the array and then store it in a HashMap. 
+2. Get the element with the maximum frequency.
+3. Compare the maximum frequency with n/2 
+    
+    Because if it is less than the n/2 then it will get cancelled by other half of the array, In the other case where it is greater than n/2 then the remaining elements is equal to maxi - ( n - maxi ) . 
+    
+    Note in the less than case if the array length is even then all the duplicates of that element will get cancelled where as if array length is odd then there will always exist one element which will not get cancelled so we return 1. 
+    
+
+```cpp
+public:
+    int minLengthAfterRemovals(vector<int>& nums) {
+        unordered_map<int,int> mp;
+        int n = nums.size();
+        for(int i = 0 ; i<nums.size() ; i++){
+            mp[nums[i]]++;
+        }
+        int maxi_ele = -1e9;
+        for(auto it : mp){
+            maxi_ele  = max(maxi_ele,it.second);
+        }
+        if(maxi_ele <= n/2){
+            if(n%2 == 0){
+                return 0;
+            }
+            else {
+                return 1;
+            }
+        }
+        return 2*maxi_ele - n;
+    }
+};
+```
+## Beautiful Tower
+You will be given an array of maximum possible heights , where each element represents the maximum height possible. 
+<span style='color:blue;'>Very Intuitive Question</span>
+You  need to make that a tower height that is beautiful 
+1. `1<= height[i] <= maxHeight[i]`
+2. height should be mountain. 
+**Mountain**
+1. For all `0 < j <= i`, `heights[j - 1] <= heights[j]`
+2. For all `i <= k < n - 1`, `heights[k + 1] <= heights[k]`
+Brute Approach : 
+For every possible element we will try to make mountain and check for the maximum sum tower. 
+```cpp
+int makeMount(int index, std::vector<int> &num) {
+  int n = num.size();
+  long long total_sum = num[index];
+  // For left part
+  int nextHeight = num[index];
+  for (int i = index - 1; i >= 0; i--) {
+    int curr = 0;
+    if (num[i] > nextHeight) {
+      curr = nextHeight;
+    } else {
+      curr = num[i];
+    }
+    nextHeight = curr;
+    total_sum += curr;
+  }
+  int prevHeight = num[index];
+  for (int i = index + 1; i < n; i++) {
+    int curr = 0;
+    if (num[i] > prevHeight) {
+      curr = prevHeight;
+    } else {
+      curr = num[i];
+    }
+    prevHeight = curr;
+    total_sum += curr;
+  }
+  return total_sum;
+}
+```
+This logic will run for each index of the array. 
+Time complexity :  $O(n^2)$ , Space complexity : $O(1)$. 
