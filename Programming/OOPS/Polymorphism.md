@@ -1,4 +1,3 @@
-# Polymorphism
 
 Polymorphism is a concept in which one task can be performed in many ways. 
 

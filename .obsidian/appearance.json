@@ -1,4 +1,8 @@
 {
   "accentColor": "",
-  "interfaceFontFamily": "Arial"
+  "interfaceFontFamily": "Arial",
+  "showViewHeader": true,
+  "translucency": false,
+  "cssTheme": "Solarized",
+  "nativeMenus": false
 }
