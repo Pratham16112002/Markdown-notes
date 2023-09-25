@@ -36,7 +36,7 @@ Vexed → annoyed, frustrated, or worried.
 
 Choir → an organized group of singers, especially one that takes part in church services or performs in public.
 Tasered 
-Taciturn 
+Taciturn : less talkative. 
 Veto Power 
 Acreage 
 Remorse
@@ -163,7 +163,31 @@ Bucolic : pleasant countryside location.
 burgeon : begin to grow or increase rapidly. 
 cacophonous : producing harsh , discordant mixture of sounds.
 canonize : officially declared to be a saint. 
-censure 
+censure : express severe disapproval of ( something or someone ) , in a formal statement. 
+chicanery : clever , dishonest talk, behaviour that is used to deceive people. 
+coalesce ( kolas ) : if two or more thing come or grow together to form one thing. 
+cogent : clear , logical and convincing. 
+contend : to complete in order to win something ( content the project for hackathon ).
+copious : abundant in supply or quantity ( copious money ).
+cosmopolitan : having people from different parts ( Indian is a cosmopolitan country ).
+deference : respect and polietness.
+desultory (dizultry) : without a clear plan or purpose and showing little effort or interest ( I am on a desultory career path).
+dilatory : show to act , intended to delay. 
+equivocate : speaking in a way to hide the truth. 
+deliberately : intentionally or consciously. 
+polarize : divide. 
+prodigal : spending extravagantly ( money or anything ). 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
