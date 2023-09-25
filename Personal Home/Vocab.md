@@ -59,8 +59,8 @@ Conviction : formal declaration.
 Wisdom : quality of being wise. 
 Connotation: something good or something bad.
 advocate : a person who supports a particular  cause or policy.
-aggrandise : increase the power , status.
-Alacrity: brisk and cheerful readiness, do something eagerly.
+aggrandize : increase the power , status.
+Alacrity: speed, do something eagerly.
 Ambivalent : having mixed feelings or contradictory ideas about something or someone.
 ameliorate: making something better.
 amenable : open and responsive to suggestions.
@@ -177,6 +177,16 @@ equivocate : speaking in a way to hide the truth.
 deliberately : intentionally or consciously. 
 polarize : divide. 
 prodigal : spending extravagantly ( money or anything ). 
+deify : worship or regard as a god. 
+craven : very cowardly. 
+disingenuous : a person who speaks dishonestly. 
+misnomer : a name that does not suit what it refers to. 
+contention : the disagreement that results from opposing arguments. 
+futile : having no effect. 
+
+
+
+
 
 
 
