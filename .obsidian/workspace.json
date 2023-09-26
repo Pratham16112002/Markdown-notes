@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Sorting.md",
+                "file": "DSA/DSA.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Sorting.md",
+                "file": "DSA/DSA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Sorting.md",
+                "file": "DSA/DSA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/Sorting.md"
+                "file": "DSA/DSA.md"
               }
             }
           }
@@ -149,21 +149,22 @@
   },
   "active": "2d6950643c62c087",
   "lastOpenFiles": [
-    "DSA/DSA.md",
+    "DSA/Trees/Trees.md",
+    "README.md",
+    "DSA/Trees",
     "DSA/Sorting.md",
+    "DSA/DSA.md",
     "DSA/Basic logic.md",
     "DSA/Linked List/Linked List.md",
     "DSA/Linked List/LL-2.md",
     "Untitled.png",
     "Untitled 1.png",
     "DSA/Linked List/LL - 1.md",
-    "Trees.md",
     "Programming/Pointers.md",
     "Notion",
     "Programming/OOPS/Polymorphism.md",
     "Programming/OOPS/Pillars of OOPS.md",
     "Programming/OOPS/OOPS.md",
-    "README.md",
     "Personal Home/Vocab.md",
     "Unconfirmed 871218.crdownload",
     "LICENSE.txt",
@@ -182,13 +183,11 @@
     "DSA/Arrays/Arrays.md",
     "DSA/Arrays/Arrays P-2.md",
     "rotatematrix.jpg",
-    "Arrays P-2 58153b20b8704d85a16f414ea19197c2",
     "DSA/Arrays/Arrays P-1.md",
     "DSA/recursion/Recursion & Backtracking.md",
     "DSA/recursion/Untitled.md",
     "DSA/Graphs/Graphs.md",
     "Development/React Native.md",
-    "Development/Development.md",
     "DSA/Untitled 2.png",
     "DSA/Untitled.png",
     "DSA/Untitled 3.png",

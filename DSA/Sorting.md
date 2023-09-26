@@ -68,4 +68,5 @@ void insertiion_sort(std::vector<int> &nums) {
   }
 }
 ```
-Time complexity : $O(n^2)$
+Time complexity : $O(n^2)$ for the worst case and the average case. 
+But for best case when the array is already sorted then the nested while loop never gets executed and the overall time complexity is $O(n)$. 
