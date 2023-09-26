@@ -20,5 +20,18 @@ void help(std::vector<int> &nums) {
 }
 ```
 Time complexity : $o(n^2)$ for all best , average and worst case.
-
-
+## Bubble sort
+```cpp
+void bubblesort(std::vector<int> &nums) {
+  int n = nums.size();
+  for (int i = 0; i < n - 1; i++) {
+    for (int j = i + 1; j < n; j++) {
+      if (nums[i] > nums[j]) {
+        std::swap(nums[i], nums[j]);
+      }
+    }
+  }
+}
+```
+Time complexity : $O(n^2)$ in for worst and average case. 
+But we can do optimization 
