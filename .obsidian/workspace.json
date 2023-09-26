@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Pointers.md",
+                "file": "Trees.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Pointers.md",
+                "file": "Trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Programming/Pointers.md",
+                "file": "Trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Programming/Pointers.md"
+                "file": "Trees.md"
               }
             }
           }
@@ -149,9 +149,11 @@
   },
   "active": "6ea58b91f6882293",
   "lastOpenFiles": [
+    "Programming/Pointers.md",
+    "Trees.md",
+    "Notion",
     "Programming/OOPS/Polymorphism.md",
     "Programming/OOPS/Pillars of OOPS.md",
-    "Programming/Pointers.md",
     "Programming/OOPS/OOPS.md",
     "README.md",
     "Personal Home/Vocab.md",
@@ -166,7 +168,6 @@
     "Programming/OOPS",
     "Programming",
     "DSA/Space and Time complexity.md",
-    "Notion",
     "DSA/DSA.md",
     "DSA/Arrays/Arrays P-3.md",
     "Pasted image 20230924205032.png",
@@ -187,7 +188,6 @@
     "Personal Home/Personal.md",
     "DSA/Graphs/Shortest Path Algorithm.md",
     "Graphs a2b0db0fea964679a93d7f2d50065f75/MST Disjoint Set 1437637b89a946d8a3a58f71b5fae7f9.md",
-    "DSA/Graphs/MST Disjoint Set.md",
     "DSA/Untitled 2.png",
     "DSA/Untitled.png",
     "DSA/Untitled 3.png",
