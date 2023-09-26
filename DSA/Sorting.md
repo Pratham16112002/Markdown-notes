@@ -35,3 +35,24 @@ void bubblesort(std::vector<int> &nums) {
 ```
 Time complexity : $O(n^2)$ in for worst and average case. 
 But we can do optimization 
+```cpp
+void bubblesort(std::vector<int> &nums) {
+  int n = nums.size();
+  for (int i = 0; i < n; i++) {
+    bool didswap = 0;
+    for (int j = 0; j < n - 1; j++) {
+      if (nums[j] > nums[j + 1]) {
+        std::swap(nums[i], nums[j]);
+        didswap = 1;
+      }
+    }
+    if (didswap == 0) {
+      break;
+    }
+    std::cout << "Runs" << std::endl;
+  }
+}
+```
+After the above optimization the complexity of the code becomes $O(n)$ for best complexity. 
+## Insertion sort
+<span></s
