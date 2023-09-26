@@ -175,15 +175,11 @@ if(head == NULL || head->next == NULL){
 Very IMPORTANT Question. 
 
 I/O
-
-![Untitled](Linked%20List%20P-2%202213d77af70c4a1988277fd89b1bf129/Untitled.png)
-
+![](https://i.imgur.com/DIzYwRm.png)
 O/P : 
-
-![Untitled](Linked%20List%20P-2%202213d77af70c4a1988277fd89b1bf129/Untitled%201.png)
+![](https://i.imgur.com/10dHF06.png)
 
 Algo : 
-
 - We will merge two linked list l1 and l2 until the current→next and current pointer becomes NULL.
 - Merge Function will merge two linked list using the bottom pointer.
 

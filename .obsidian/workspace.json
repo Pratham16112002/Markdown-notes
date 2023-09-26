@@ -4,17 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "3928e3eea91c5d86",
+        "id": "e58133b0c6f365b6",
         "type": "tabs",
         "children": [
           {
-            "id": "6ea58b91f6882293",
+            "id": "2d6950643c62c087",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Untitled.png"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -83,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -122,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Untitled.png"
-              }
+              "state": {}
             }
           }
         ]
@@ -145,13 +139,14 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "6ea58b91f6882293",
+  "active": "2d6950643c62c087",
   "lastOpenFiles": [
-    "Linked List P-2.md",
-    "Untitled 1.png",
-    "Untitled.png",
-    "DSA/Linked List/LL - 1.md",
+    "DSA/DSA.md",
     "DSA/Linked List/Linked List.md",
+    "DSA/Linked List/LL-2.md",
+    "Untitled.png",
+    "Untitled 1.png",
+    "DSA/Linked List/LL - 1.md",
     "Trees.md",
     "Programming/Pointers.md",
     "Notion",
@@ -171,7 +166,6 @@
     "Programming/OOPS",
     "Programming",
     "DSA/Space and Time complexity.md",
-    "DSA/DSA.md",
     "DSA/Arrays/Arrays P-3.md",
     "Pasted image 20230924205032.png",
     "Arrays P-2 58153b20b8704d85a16f414ea19197c2/rotatematrix.jpg.md",
