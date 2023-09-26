@@ -19,4 +19,6 @@ void help(std::vector<int> &nums) {
   }
 }
 ```
+Time complexity : $o(n^2)$ for all best , average and worst case.
+
 
