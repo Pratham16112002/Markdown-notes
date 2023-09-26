@@ -56,3 +56,16 @@ void bubblesort(std::vector<int> &nums) {
 After the above optimization the complexity of the code becomes $O(n)$ for best complexity. 
 ## Insertion sort
 <span style='font-weight:bold;color:red;'>Takes a element and place it in its correct possition</span>
+```cpp
+void insertiion_sort(std::vector<int> &nums) {
+  int n = nums.size();
+  for (int i = 0; i < n; i++) {
+    int j = i;
+    while (j > 0 && nums[j] < nums[j - 1]) {
+      std::swap(nums[j], nums[j - 1]);
+      j--;
+    }
+  }
+}
+```
+Time complexity : $O(n^2)$
