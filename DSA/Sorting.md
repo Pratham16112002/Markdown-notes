@@ -55,4 +55,4 @@ void bubblesort(std::vector<int> &nums) {
 ```
 After the above optimization the complexity of the code becomes $O(n)$ for best complexity. 
 ## Insertion sort
-<span></s
+<span style='font-weight:bold;color:red;'>Takes a element and place it in its correct possition</span>
