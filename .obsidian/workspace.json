@@ -11,11 +11,9 @@
             "id": "6ea58b91f6882293",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Trees.md",
-                "mode": "source",
-                "source": false
+                "file": "Untitled.png"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Trees.md",
+                "file": "Untitled.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Trees.md",
+                "file": "Untitled.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Trees.md"
+                "file": "Untitled.png"
               }
             }
           }
@@ -149,8 +147,13 @@
   },
   "active": "6ea58b91f6882293",
   "lastOpenFiles": [
-    "Programming/Pointers.md",
+    "Linked List P-2.md",
+    "Untitled 1.png",
+    "Untitled.png",
+    "DSA/Linked List/LL - 1.md",
+    "DSA/Linked List/Linked List.md",
     "Trees.md",
+    "Programming/Pointers.md",
     "Notion",
     "Programming/OOPS/Polymorphism.md",
     "Programming/OOPS/Pillars of OOPS.md",
@@ -174,27 +177,21 @@
     "Arrays P-2 58153b20b8704d85a16f414ea19197c2/rotatematrix.jpg.md",
     "DSA/Arrays/Arrays.md",
     "DSA/Arrays/Arrays P-2.md",
-    "Untitled.png",
     "rotatematrix.jpg",
     "Arrays P-2 58153b20b8704d85a16f414ea19197c2",
     "DSA/Arrays/Arrays P-1.md",
     "DSA/recursion/Recursion & Backtracking.md",
-    "DSA/Linked List/LL - 1.md",
-    "DSA/Linked List/Linked List.md",
     "DSA/recursion/Untitled.md",
     "DSA/Graphs/Graphs.md",
     "Development/React Native.md",
     "Development/Development.md",
     "Personal Home/Personal.md",
-    "DSA/Graphs/Shortest Path Algorithm.md",
-    "Graphs a2b0db0fea964679a93d7f2d50065f75/MST Disjoint Set 1437637b89a946d8a3a58f71b5fae7f9.md",
     "DSA/Untitled 2.png",
     "DSA/Untitled.png",
     "DSA/Untitled 3.png",
     "DSA/Untitled 1.png",
     "Untitled 6.png",
     "Untitled 4.png",
-    "Untitled 5.png",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
