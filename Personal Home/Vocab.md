@@ -179,8 +179,10 @@ humdrum  ( Mundane , Dreary , Monotonous ) : having no excitement or interest .
 austere ( spartan , stark , ascetic ): very harsh , hard , severe. 
 wary  ( circumspect , chary , heedful ) : not completely trusting. 
 puerile ( juvenile , jejune ): behaving in a silly way , not an adult. 
-loquacious ( ) : some one who talks a lot. 
-
+loquacious ( garrulous , voluble , prolix ) : some one who talks a lot. 
+flexible : expedient or conceivable . 
+tranquil : calm and peaceful without noise , worry , etc. 
+zealous : eager or enthusia
 
 
 
