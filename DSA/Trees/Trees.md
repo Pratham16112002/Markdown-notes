@@ -124,3 +124,4 @@ int findCeil(BinaryTreeNode<int> *node, int x){
 Time complexity : $O(H)$ where H is the maximum height of the tree. 
 What would be the worst case for the above algorithm 🧐? 
 <span style='font-weight:bold;color:lightgreen;'>Skew Tree</span>
+## Morris inorder traversal 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Personal Home/Vocab.md",
+                "file": "DSA/Trees/Trees.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Personal Home/Vocab.md",
+                "file": "DSA/Trees/Trees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Personal Home/Vocab.md",
+                "file": "DSA/Trees/Trees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Personal Home/Vocab.md"
+                "file": "DSA/Trees/Trees.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "2d6950643c62c087",
   "lastOpenFiles": [
+    "Personal Home/Vocab.md",
     "Personal Home/GRE/Support and contrast.md",
     "Personal Home/Personal.md",
     "DSA/Space and Time complexity.md",
@@ -168,7 +169,6 @@
     "Programming/OOPS/Polymorphism.md",
     "Programming/OOPS/Pillars of OOPS.md",
     "Programming/OOPS/OOPS.md",
-    "Personal Home/Vocab.md",
     "Unconfirmed 871218.crdownload",
     "LICENSE.txt",
     "LICENSE.txt.crdownload",
