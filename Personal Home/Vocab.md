@@ -176,7 +176,7 @@ frugal : careful when using money or food.
 stingy : a person is stingy if he / she is unwilling to spend money. 
 capricious : changing mood or behavior suddenly and unexpectedly or fickle or mercurial or vacillating.
 humdrum  ( Mundane , Dreary , Monotonous ) : having no excitement or interest . 
-
+austere ( spartan , stark , ascetic ): very harsh , hard , severe . 
 
 
 
