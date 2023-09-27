@@ -168,6 +168,10 @@ mortify : cause someone to feel very embarrassed.
 incensed : very angry.
 dogmatic : if you are dogmatic , then you think that you are right even if you're not, and think everyone else is wrong or doctrinaire. 
 iconoclastic : criticizing or attacking any belief or institution or heterodox.
+ubiquitous : seeming to everywhere. 
+scanty : smaller in size or amount that is considered necessary or hoped for. 
+omnipresent : present or having an effect everywhere every time. 
+
 
 
 
