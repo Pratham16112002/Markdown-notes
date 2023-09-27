@@ -171,6 +171,7 @@ iconoclastic : criticizing or attacking any belief or institution or heterodox.
 ubiquitous : seeming to everywhere. 
 scanty : smaller in size or amount that is considered necessary or hoped for. 
 omnipresent : present or having an effect everywhere every time. 
+acute : If a bad situation is acute , it causes severe problem or damage. 
 
 
 
