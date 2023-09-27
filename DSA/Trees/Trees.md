@@ -127,6 +127,7 @@ What would be the worst case for the above algorithm 🧐?
 ## Morris inorder traversal 
 It is the same inorder traversal as the inorder traversal. 
 But the space complexity for this inorder traversal is $O(1)$. 
+<span style='color:red;'>Very Intiutive</span>😫. 
 Because we use threaded binary tree. 
 we connect a thread back to its last root , so that we need not to use any stack or recursion to remember it when we need to head back to the previous root node. 
 **Algorithm**
