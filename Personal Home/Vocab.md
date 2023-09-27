@@ -19,7 +19,7 @@ Injunction → authoritative warning or order.
 Vexed → annoyed, frustrated, or worried.
 Choir → an organized group of singers, especially one that takes part in church services or performs in public.
 Tasered 
-Taciturn : less talkative. 
+Taciturn ( Reticent , Laconic , Aloof ) : less talkative. 
 Veto Power 
 Acreage 
 Remorse
@@ -176,8 +176,10 @@ frugal : careful when using money or food.
 stingy : a person is stingy if he / she is unwilling to spend money. 
 capricious : changing mood or behavior suddenly and unexpectedly or fickle or mercurial or vacillating.
 humdrum  ( Mundane , Dreary , Monotonous ) : having no excitement or interest . 
-austere ( spartan , stark , ascetic ): very harsh , hard , severe . 
-
+austere ( spartan , stark , ascetic ): very harsh , hard , severe. 
+wary  ( circumspect , chary , heedful ) : not completely trusting. 
+puerile ( juvenile , jejune ): behaving in a silly way , not an adult. 
+loquacious ( ) : some one who talks a lot. 
 
 
 
