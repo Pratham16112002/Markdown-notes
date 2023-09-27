@@ -149,7 +149,7 @@ cogent : clear , logical and convincing.
 contend : to complete in order to win something ( content the project for hackathon ).
 copious : abundant in supply or quantity ( copious money ).
 cosmopolitan : having people from different parts ( Indian is a cosmopolitan country ).
-deference : respect and polietness.
+deference : respect and politeness.
 desultory (dizultry) : without a clear plan or purpose and showing little effort or interest ( I am on a desultory career path).
 dilatory : show to act , intended to delay. 
 equivocate : speaking in a way to hide the truth. 
@@ -162,7 +162,7 @@ disingenuous : a person who speaks dishonestly.
 misnomer : a name that does not suit what it refers to. 
 contention : the disagreement that results from opposing arguments. 
 futile : having no effect. 
-congenial : friendly or neutral. 
+congenial : friendly or neutral or hospitable . 
 belie : cover something up , mask.
 mortify : cause someone to feel very embarrassed. 
 incensed : very angry.
@@ -174,7 +174,8 @@ omnipresent : present or having an effect everywhere every time.
 acute : If a bad situation is acute , it causes severe problem or damage. 
 frugal : careful when using money or food. 
 stingy : a person is stingy if he / she is unwilling to spend money. 
-capricious : changing mood or behavior suddenly and unexpectedly or fic. 
+capricious : changing mood or behavior suddenly and unexpectedly or fickle or mercurial or vacillating.
+humdrum  ( Mundane , Dreary , Monotonous ) : having no excitement or interest . 
 
 
 
