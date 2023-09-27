@@ -128,4 +128,35 @@ What would be the worst case for the above algorithm 🧐?
 It is the same inorder traversal as the inorder traversal. 
 But the space complexity for this inorder traversal is $O(1)$. 
 Because we use threaded binary tree. 
-we conne
+we connect a thread back to its last root , so that we need not to use any stack or recursion to remember it when we need to head back to the previous root node. 
+**Algorithm**
+```cpp
+ vector<int> inorderTraversal(TreeNode* root) {
+        TreeNode* curr = root;
+        vector<int> ans;
+        while(curr != NULL){
+            if(curr->left == NULL){
+                ans.push_back(curr->val);
+                curr = curr->right;
+            }
+            else {
+                TreeNode* prev = curr->left;
+                while(prev->right && prev->right != curr){ // Running for atmost O(n)
+                    prev = prev->right;
+                }
+                if(prev->right == NULL){
+                    prev->right = curr;
+                    curr=curr->left;
+                }
+                else {
+                    prev->right = NULL;
+                    ans.push_back(curr->val);
+                    curr=curr->right;
+                    
+                }
+            }
+        }
+        return ans;
+    }
+```
+Time complexity $O(n+n)$, Space complexity : $O(1)$ 🥳. 
