@@ -164,6 +164,10 @@ contention : the disagreement that results from opposing arguments.
 futile : having no effect. 
 congenial : friendly or neutral. 
 belie : cover something up , mask.
+mortify : cause someone to feel very embarrassed. 
+incensed : very angry.
+
+
 
 
 

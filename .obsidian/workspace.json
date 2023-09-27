@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/DSA.md",
+                "file": "Personal Home/Vocab.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/DSA.md",
+                "file": "Personal Home/Vocab.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/DSA.md",
+                "file": "Personal Home/Vocab.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/DSA.md"
+                "file": "Personal Home/Vocab.md"
               }
             }
           }
@@ -149,11 +149,14 @@
   },
   "active": "2d6950643c62c087",
   "lastOpenFiles": [
+    "Personal Home/GRE/Support and contrast.md",
+    "Personal Home/Personal.md",
+    "DSA/Space and Time complexity.md",
+    "DSA/DSA.md",
     "DSA/Trees/Trees.md",
     "README.md",
     "DSA/Trees",
     "DSA/Sorting.md",
-    "DSA/DSA.md",
     "DSA/Basic logic.md",
     "DSA/Linked List/Linked List.md",
     "DSA/Linked List/LL-2.md",
@@ -169,14 +172,12 @@
     "Unconfirmed 871218.crdownload",
     "LICENSE.txt",
     "LICENSE.txt.crdownload",
-    "Personal Home/GRE/Support and contrast.md",
     "Week 1.md",
     "Greg Mat Support_Contrast List.xlsx",
     "Support Constrast List.csv",
     "Personal Home/GRE",
     "Programming/OOPS",
     "Programming",
-    "DSA/Space and Time complexity.md",
     "DSA/Arrays/Arrays P-3.md",
     "Pasted image 20230924205032.png",
     "Arrays P-2 58153b20b8704d85a16f414ea19197c2/rotatematrix.jpg.md",
