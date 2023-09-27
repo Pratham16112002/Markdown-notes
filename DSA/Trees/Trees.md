@@ -125,3 +125,6 @@ Time complexity : $O(H)$ where H is the maximum height of the tree.
 What would be the worst case for the above algorithm 🧐? 
 <span style='font-weight:bold;color:lightgreen;'>Skew Tree</span>
 ## Morris inorder traversal 
+It is the same inorder traversal as the inorder traversal. 
+But the space complexity for this inorder traversal is $O(1)$. 
+Because we use threaded binary tree. 
