@@ -166,7 +166,10 @@ congenial : friendly or neutral.
 belie : cover something up , mask.
 mortify : cause someone to feel very embarrassed. 
 incensed : very angry.
-dogmatic : if you are dogmatic , then you think that you are right even if you're not, and think everyone else is wrong. 
+dogmatic : if you are dogmatic , then you think that you are right even if you're not, and think everyone else is wrong or doctrinaire. 
+iconoclastic : criticizing or attacking any belief or institution or heterodox.
+
+
 
 
 
