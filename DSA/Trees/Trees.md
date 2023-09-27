@@ -128,3 +128,4 @@ What would be the worst case for the above algorithm 🧐?
 It is the same inorder traversal as the inorder traversal. 
 But the space complexity for this inorder traversal is $O(1)$. 
 Because we use threaded binary tree. 
+we conne
