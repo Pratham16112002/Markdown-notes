@@ -23,7 +23,15 @@ Make sure that data should be available to the right person when he/she needs it
 System should be reliable and accessible anytime.
 **Redundancy** 
 	My having all the data duplicated in organization makes sure data is accessible anytime, if one server fails the the duplicate data can be transferred immediately. 
+**Regular Backups**
+	To make sure that in case of any damage to data, data can be easily restored. 
+**24x7 Power Availability**
+**DOS protection**
+	Implementing DOS strategies, like rate limiting and traffic limiting . 
+> DDOS and DOS affect the availability of the data. 
 
+## Threats and vulnerabilities
+qqqqqqqqqqqqqqqqqq
 
 
 
