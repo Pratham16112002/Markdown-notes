@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Trees/Trees.md",
+                "file": "Semester Notes/Cyber Security.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "f7b5dcd629b13bcf",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.14"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DSA/Trees/Trees.md",
+                "file": "Semester Notes/Cyber Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DSA/Trees/Trees.md",
+                "file": "Semester Notes/Cyber Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DSA/Trees/Trees.md"
+                "file": "Semester Notes/Cyber Security.md"
               }
             }
           }
@@ -158,10 +147,12 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "f7b5dcd629b13bcf",
+  "active": "2d6950643c62c087",
   "lastOpenFiles": [
-    "Personal Home/Vocab.md",
     "DSA/Trees/Trees.md",
+    "Semester Notes/Cyber Security.md",
+    "Semester Notes",
+    "Personal Home/Vocab.md",
     "Personal Home/GRE/Support and contrast.md",
     "Personal Home/Personal.md",
     "DSA/Space and Time complexity.md",
@@ -188,7 +179,6 @@
     "Support Constrast List.csv",
     "Personal Home/GRE",
     "Programming/OOPS",
-    "Programming",
     "DSA/Arrays/Arrays P-3.md",
     "Pasted image 20230924205032.png",
     "Arrays P-2 58153b20b8704d85a16f414ea19197c2/rotatematrix.jpg.md",
@@ -199,7 +189,6 @@
     "DSA/recursion/Recursion & Backtracking.md",
     "DSA/recursion/Untitled.md",
     "DSA/Graphs/Graphs.md",
-    "Development/React Native.md",
     "DSA/Untitled 2.png",
     "DSA/Untitled.png",
     "DSA/Untitled 3.png",
