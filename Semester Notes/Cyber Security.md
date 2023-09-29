@@ -6,6 +6,11 @@ This means that sensitive data should not be disclosed to any unauthorized perso
 Security measures like encryption 
 	By encrypting the data, we make sure that none other than the authorized person can see the data without the key to unlock the encryption. 
 Access Controls 
-	By some access control mechanism we can restrict the access of 
+	By some access control mechanism we can restrict the access to the data to some specific employees only , rather than every employee of the organization. 
+Authentication 
+	By added some Biometrics, ( 2FA ) before accessing the data might increase its confidentiality of the data. 
+Secure Transmission 
+	By using some secure protocols like HTTPS instead of HTTP and SSL protocol. 
+<span sstyle></span>
 
 
