@@ -11,6 +11,10 @@ Authentication
 	By added some Biometrics, ( 2FA ) before accessing the data might increase its confidentiality of the data. 
 Secure Transmission 
 	By using some secure protocols like HTTPS instead of HTTP and SSL protocol. 
-<span sstyle></span>
+<span style='color:red;font-weight:bold;'>Integrity</span>
+Means the make sure the accuracy and reliability of the data . 
+No modification of data should be done by any unauthorized person or parties. 
+Security measures like hashing and checksums 
+	Generating a hash value of the data using some crypto-graphic functions and then comparing the hash values 
 
 
