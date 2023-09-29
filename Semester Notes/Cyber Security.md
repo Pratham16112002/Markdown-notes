@@ -15,6 +15,12 @@ Secure Transmission
 Means the make sure the accuracy and reliability of the data . 
 No modification of data should be done by any unauthorized person or parties. 
 Security measures like hashing and checksums 
-	Generating a hash value of the data using some crypto-graphic functions and then comparing the hash values 
+	Generating a hash value of the data using some crypto-graphic functions and then comparing the hash values at every moment while the data is in transmission. 
+Digital Signatures : 
+	A electronic signature is added with the data while transmission and when receiver receive the data then he/she verify the digital signature and make sure that data is not modified. 
+<span style="color:red;font-weight:bold;">Availability</span>
+Make sure that data should be available to the right person when he/she needs it.
+System should be reliable and 
+
 
 
