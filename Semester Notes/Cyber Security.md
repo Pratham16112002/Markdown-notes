@@ -20,7 +20,10 @@ Digital Signatures :
 	A electronic signature is added with the data while transmission and when receiver receive the data then he/she verify the digital signature and make sure that data is not modified. 
 <span style="color:red;font-weight:bold;">Availability</span>
 Make sure that data should be available to the right person when he/she needs it.
-System should be reliable and 
+System should be reliable and accessible anytime.
+Redundancy 
+	My having all the data duplicated in organization makes sure data is accessible anytime, if one server fails the the data can be transfered  
+
 
 
 
