@@ -36,6 +36,10 @@ System should be reliable and accessible anytime.
 
 ## Phishing
 It is a cyber crime in which attackers attempt to deceive the individual or organization to disclose their confidential information to them. 
+Typically involves : 
+1. Deception : The attackers sometimes impersonate as a trusted entity by sending fake email to the individual or organization . 
+2. Bait : The attackers try to lure the victim by offering him/her very tempting offer or urgent emergency messages. 
+3. Clicking malcious 
 
 
 
