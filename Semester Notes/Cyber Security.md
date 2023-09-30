@@ -39,7 +39,8 @@ It is a cyber crime in which attackers attempt to deceive the individual or orga
 Typically involves : 
 1. Deception : The attackers sometimes impersonate as a trusted entity by sending fake email to the individual or organization . 
 2. Bait : The attackers try to lure the victim by offering him/her very tempting offer or urgent emergency messages. 
-3. Clicking malcious 
+3. Clicking link and attachment : Victims are usually asked to click on some link with redirect them to a website which is a counterfeit of the original website inorder to gain control over user information. 
+
 
 
 
