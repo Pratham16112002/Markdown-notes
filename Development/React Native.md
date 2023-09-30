@@ -188,4 +188,6 @@ The screen orientation is specified in the `app.json` file in the home directory
  `"orientation": "portrait",`
 To make the app for both orientation we can do 
  `"orientation" : "default"`,
- 
+
+#### useWindowDimensions
+This hook automatically updates the height and width or font size  when the screen size changes. 
