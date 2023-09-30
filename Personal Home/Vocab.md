@@ -186,6 +186,7 @@ Placid ( tranquil ): a person is placid, if he/she does not get upset or excited
 Skittish ( restive ) : nervous , or excited easily or unpredictable. <br>
 vociferous : describing that someone is loud or noisy. <br>
 indecorous ( unseemly ) : a behavior that is treated as inappropriate , offensive. <br>
+fortuitous ( unexpected ) : anything that is not done intentionally. <br>
 
 
 
