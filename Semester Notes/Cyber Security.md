@@ -78,8 +78,12 @@ It is a type of malicious attack in which some how attacker gains the access to 
 It is also intended to attack the availability of the data. 
 
 ## Web attacks
-Those malicious attack which tends to 
-There are various web-attacks like CSRF, XSS attack 
+Those malicious attack which tends to attack the web-applications and web-servers, with an intent to exploit the vulnerabilities and steal data or destroy data. 
+There are various web-attacks like CSRF, XSS attack , SQLi attack. 
+
+**XSS attack** : In this attack attacker injects malicious client side script into web-pages without their consent, their main task is to steal the users information from that web-application. 
+	<span style='color:grren;'></span>
+
 
 
 
