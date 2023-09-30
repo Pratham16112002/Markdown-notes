@@ -81,7 +81,8 @@ It is also intended to attack the availability of the data.
 Those malicious attack which tends to attack the web-applications and web-servers, with an intent to exploit the vulnerabilities and steal data or destroy data. 
 There are various web-attacks like CSRF, XSS attack , SQLi attack. 
 
-**XSS attack** : In this attack attacker injects malicious client side script into web-pages without their consent, their main task is to steal the users information from that web-application. 
+**XSS attack** :
+	In this attack attacker injects malicious client side script into web-pages without their consent, their main task is to steal the users information from that web-application. 
 	<span style='color:lightgreen;'>Prevention</span>
 	Install web application firewall. 
 	Input validation and sanitization. 
@@ -96,7 +97,7 @@ There are various web-attacks like CSRF, XSS attack , SQLi attack.
 	Install web application firewall . 
 	Take regular backups of server data. 
 **SQL Injection Attack**
-	It
+	It is the most 
 
 
 
