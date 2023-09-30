@@ -194,4 +194,6 @@ This hook automatically updates the height and width or font size  when the scre
 `const { height, width } = useWindowDimensions()`
 
 ### KeybordAvoidingView
+Will automatically adjust the height, position or bottom based on the keyboard remains visible while virtual keyboard is displayed. 
+
 
