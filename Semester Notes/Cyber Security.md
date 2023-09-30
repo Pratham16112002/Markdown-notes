@@ -48,6 +48,9 @@ Often attaches itself to a legitimate program or files and spread through the co
 **Direct infection** : When virus infect the computer system, every time the user open a specific infected program or file. 
 **Fast infection** : When virus infects the files whenever any file accessed by the program is infected. 
 **Slow infection** : When virus infects any new file or modified document.
+## Trojan horse 
+It is a program or software which looks legitimate one, but underneath the program is designed to steal the information or deletes the computer data. 
+Some trojan horse also creates back-doors in the computer systems. 
 
 
 
