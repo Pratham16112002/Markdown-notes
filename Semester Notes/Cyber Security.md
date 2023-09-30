@@ -55,7 +55,10 @@ Some trojan horse also creates back-doors in the computer systems.
 worms are more dangerous then viruses. 
 Both worms and viruses are malicious program a computer system, without the users consent and replicates themselves . 
 <span style='color:red';>Main Difference between virus and worm</span>
-1. Virus spread through human action, where 
+1. Virus spread through human action, where worms are self replicating. 
+2. Worms are even capable of replicating over user's network ( Called : *Internet worms*) 
+3. Worms can also spread to others users in your contact list and copy themselves into every other user in the contact list, it copies itself into email attachments ( Called : *Email worms* ).
+### Zombie & Botnets
 
 
 
