@@ -111,6 +111,11 @@ There are various web-attacks like CSRF, XSS attack , SQLi attack.
 	Content Security Policy, to restrict the which domains are allowed to execute java script on the browser. 
 	Same origin policy.
 
+## Email attacks
+1. **Email Bombing** : Sending large amount of email in a bulk to a particular user, here we just irritate the user only. 
+3. **Email Spoofing** : Sending a malicious email to the user which looks like a email from a legitimate person. 
+4. **Email Hacking** : Finding the password of the user's email. 
+
 
 
 
