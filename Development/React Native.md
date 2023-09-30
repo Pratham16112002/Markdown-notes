@@ -207,3 +207,7 @@ It prevent the content from being hidden behind the keyboard.
 
 **Behavior** : This  prop tells how to react to the presence of keyboard. 
 
+## Platform 
+It is an API built in react native.
+It has multiple props you check out them here 
+	[Click Here](https://reactnative.dev/docs/platform)
