@@ -67,6 +67,10 @@ Both worms and viruses are malicious program a computer system, without the user
 *Adware* : These are the malwares which are designed to display advertisement to the user, They are not usually harmful to the computer system but they tends to steal information about the users such as search history, apps he/she uses, etc. 
 	Adds corresponding to users behaviour is shown to the user. 
 *Spyware* : It is like a adware that spies on what the user is doing collect the information and provide it to the attacker, spyware unlike adware uses users device memory and keep running in the background. 
+	The best example of spyware would be keylogger, Adware, Trojan spyware. 
+
+## Denial of service attack 
+It a malicious attempt to 
 
 
 
