@@ -168,3 +168,10 @@ const [fontsLoaded] = useFonts({
 
 >when we set  `width = '%80'` then this width is according to the 80% of the parent container. 
 
+### Dimensions 
+This is a API build into react-native library. 
+It is not a component but a java script object 
+
+To the device dimensions we do : 
+```
+```
