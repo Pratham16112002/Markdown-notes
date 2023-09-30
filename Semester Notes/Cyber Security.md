@@ -45,8 +45,9 @@ Are special software which are designed to gain unauthorized access or exploit c
 ### Virus 
 A computer virus is a program which is used to replicate it-self and spread from one computer device to another. 
 Often attaches itself to a legitimate program or files and spread through the computer device fast. 
-
-
+**Direct infection** : When virus infect the computer system, every time the user open a specific infected program or file. 
+**Fast infection** : When virus infects the files whenever any file accessed by the program is infected. 
+**Slow infection** : When virus infects any new file or modified document.
 
 
 
