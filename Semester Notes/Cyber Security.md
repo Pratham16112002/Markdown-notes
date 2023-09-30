@@ -59,7 +59,10 @@ Both worms and viruses are malicious program a computer system, without the user
 2. Worms are even capable of replicating over user's network ( Called : *Internet worms*) 
 3. Worms can also spread to others users in your contact list and copy themselves into every other user in the contact list, it copies itself into email attachments ( Called : *Email worms* ).
 ### Zombie & Botnets
-*Zombies* : These are the system which are already affected by some viruses and the attackers as fu
+*Zombies* : These are the system which are already affected by some viruses and the attackers as full control over the system, Can be remotely controlled inorder to perform malicious activities, used for DDOS , phishing , spamming, etc. 
+*Botnets* : It is a computer network compromised by a cybercrime group and that group has access to each and every zombie in the network . 
+	Botnets are only created by cybercrime group when they need some high computational power for an attack, more likely an DDOS attacks . 
+
 
 
 
