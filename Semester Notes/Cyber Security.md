@@ -102,7 +102,10 @@ There are various web-attacks like CSRF, XSS attack , SQLi attack.
 <span style='color:lightgreen;'>Prevention</span>
 	Input validation, the data should be well filtered before reaching the database. 
 	Least privilege, restrict the data base access to only required or necessary persons only. 
-### 
+**Client Side request forgery**
+	In this attack attacker exploit the trust between the website & user's browser.
+	Attacker tricks the victim into making a request to a different web-application, because of the cookie stored in the victim browser, victim takes advantage of that and make a malicious request for a particular web-application. 
+	Web-server is tricked into beleveing 
 
 
 
