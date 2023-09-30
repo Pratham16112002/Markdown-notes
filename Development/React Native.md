@@ -183,3 +183,9 @@ const deviceHeight = Dimensions.get('window').height
 In case of IOS both means the same. 
 In case of Android window means only the display area excluding the status bar of the mobile screen, where as screen in android means the display area including the status bar of the mobile screen. 
 
+## Screen orientation
+The screen orientation is specified in the `app.json` file in the home directory. 
+ `"orientation": "portrait",`
+To make the app for both orientation we can do 
+ `"orientation" : "default"`,
+ 
