@@ -70,7 +70,9 @@ Both worms and viruses are malicious program a computer system, without the user
 	The best example of spyware would be keylogger, Adware, Trojan spyware. 
 
 ## Denial of service attack 
-It a malicious attempt to 
+It a malicious attempt to attack the availability of server hence data, in this attack attacker flood a organization's servers with multiple overwhelming request, server is sometimes tricked into believing that the requests are coming from legitimate users. 
+All the resources of the server are interrupted by those request and server is unable to handle the requests of its own users, due to which server becomes unavailable . 
+
 
 
 
