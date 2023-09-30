@@ -191,3 +191,5 @@ To make the app for both orientation we can do
 
 #### useWindowDimensions
 This hook automatically updates the height and width or font size  when the screen size changes. 
+`const { height, width } = useWindowDimensions()`
+
