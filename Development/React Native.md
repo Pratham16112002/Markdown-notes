@@ -165,3 +165,6 @@ const [fontsLoaded] = useFonts({
     'open-sans-r': require('./assets/fonts/open-sans-2.ttf')
   })
 ```
+
+>when we set  `width = '%80'` then this width is according to the 80% of the parent container. 
+
