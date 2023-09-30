@@ -73,6 +73,10 @@ Both worms and viruses are malicious program a computer system, without the user
 It a malicious attempt to attack the availability of server hence data, in this attack attacker flood a organization's servers with multiple overwhelming request, server is sometimes tricked into believing that the requests are coming from legitimate users. 
 All the resources of the server are interrupted by those request and server is unable to handle the requests of its own users, due to which server becomes unavailable . 
 
+## Ransomware 
+It is a type of malicious attack in which some how attacker gains the access to user data and encrypts all the files, In return attacker want victim to do his/her demands in order to get the decryption key to gain access to the system. 
+It is also intended to attack the availability of the data. 
+
 
 
 
