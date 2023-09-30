@@ -35,7 +35,7 @@ System should be reliable and accessible anytime.
 **Vulnerabilities** : Weakness in the information system that can be exploited by attacker. 
 
 ## Phishing
-It is a cyber crime in which 
+It is a cyber crime in which attackers attempt to deceive the individual or organization to disclose their confidential information to them. 
 
 
 
