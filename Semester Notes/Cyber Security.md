@@ -82,7 +82,10 @@ Those malicious attack which tends to attack the web-applications and web-server
 There are various web-attacks like CSRF, XSS attack , SQLi attack. 
 
 **XSS attack** : In this attack attacker injects malicious client side script into web-pages without their consent, their main task is to steal the users information from that web-application. 
-	<span style='color:grren;'></span>
+	<span style='color:lightgreen;'>Prevention</span>
+	Install web application firewall. 
+	Input validation before sending to the web-application. 
+	
 
 
 
