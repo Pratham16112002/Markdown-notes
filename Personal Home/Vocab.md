@@ -183,8 +183,8 @@ flexible : expedient or conceivable . <br>
 tranquil : calm and peaceful without noise , worry , etc. <br>
 zealous : eager or enthusiastic . <br>
 Placid ( tranquil ): a person is placid, if he/she does not get upset or excited quickly. <br>
-Skittish : nervous , or excited easily or unpredictable. <br>
-vociferous : describing that someone is loud or noisy.
+Skittish ( restive ) : nervous , or excited easily or unpredictable. <br>
+vociferous : describing that someone is loud or noisy. <br>
 
 
 
