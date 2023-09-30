@@ -97,7 +97,12 @@ There are various web-attacks like CSRF, XSS attack , SQLi attack.
 	Install web application firewall . 
 	Take regular backups of server data. 
 **SQL Injection Attack**
-	It is the most 
+	It is the most dangerous attack target to a database of the web application. 
+	It occurs when attacker manipulate user input in web-application and send malicious SQL queries on the database. 
+<span style='color:lightgreen;'>Prevention</span>
+	Input validation, the data should be well filtered before reaching the database. 
+	Least privilege, restrict the data base access to only required or necessary persons only. 
+### 
 
 
 
