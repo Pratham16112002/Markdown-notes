@@ -1,4 +1,3 @@
-# Vocabulary
 
 envy : → Jealousy 
 reckon → to think or conclude. 

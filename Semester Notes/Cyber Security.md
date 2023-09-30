@@ -90,7 +90,13 @@ There are various web-attacks like CSRF, XSS attack , SQLi attack.
 	Using Content Security Policy. 
 
 **DDOS attack**
-	It is type of large scale DOS attack in which attacker creates an army of botnets and at a particular time all the botnets send multiple requestion 
+	It is type of large scale DOS attack in which attacker creates an army of botnets and at a particular time all the botnets send multiple requests to construe the web-servers, and make the web-server inaccessible to the original users. 
+<span style='color:lightgreen;'>Prevention</span>
+	Implement features like rate limiting. 
+	Install web application firewall . 
+	Take regular backups of server data. 
+**SQL Injection Attack**
+	It
 
 
 
