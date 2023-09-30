@@ -42,6 +42,9 @@ Typically involves :
 3. Clicking link and attachment : Victims are usually asked to click on some link with redirect them to a website which is a counterfeit of the original website inorder to gain control over user information. 
 ## Malware 
 Are special software which are designed to gain unauthorized access or exploit computer systems or networks or devices , without the consent of user or owner. 
+### Virus 
+A computer virus is a program which is used to replicate it-self and spread from one computer device to another. 
+Often attaches itself to a legitimate program or files and spread through the computer device fast. 
 
 
 
