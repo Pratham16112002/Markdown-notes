@@ -84,8 +84,13 @@ There are various web-attacks like CSRF, XSS attack , SQLi attack.
 **XSS attack** : In this attack attacker injects malicious client side script into web-pages without their consent, their main task is to steal the users information from that web-application. 
 	<span style='color:lightgreen;'>Prevention</span>
 	Install web application firewall. 
-	Input validation before sending to the web-application. 
-	
+	Input validation and sanitization. 
+	Output encoding.
+	Keeping software up to date. 
+	Using Content Security Policy. 
+
+**DDOS attack**
+	It is type of large scale DOS attack in which attacker creates an army of botnets and at a particular time all the botnets send multiple requestion 
 
 
 
