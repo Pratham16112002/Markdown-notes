@@ -105,7 +105,12 @@ There are various web-attacks like CSRF, XSS attack , SQLi attack.
 **Client Side request forgery**
 	In this attack attacker exploit the trust between the website & user's browser.
 	Attacker tricks the victim into making a request to a different web-application, because of the cookie stored in the victim browser, victim takes advantage of that and make a malicious request for a particular web-application. 
-	Web-server is tricked into beleveing 
+	Web-server is tricked into believing that request is coming from the legitimate users instead the request is coming from the attacker. 
+<span style='color:lightgreen;'>Prevention</span>
+	Anti-CSRF tokens, these token are unique for each session and must be sent with each and every request and the server checks the validity of the that token each time. 
+	Content Security Policy, to restrict the which domains are allowed to execute java script on the browser. 
+	Same origin policy.
+
 
 
 
