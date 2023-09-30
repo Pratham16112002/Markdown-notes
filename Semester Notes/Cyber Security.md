@@ -51,6 +51,13 @@ Often attaches itself to a legitimate program or files and spread through the co
 ## Trojan horse 
 It is a program or software which looks legitimate one, but underneath the program is designed to steal the information or deletes the computer data. 
 Some trojan horse also creates back-doors in the computer systems. 
+### Worms 
+worms are more dangerous then viruses. 
+Both worms and viruses are malicious program a computer system, without the users consent and replicates themselves . 
+<span style='color:red';>Main Difference between virus and worm</span>
+1. Virus spread through human action, where 
+
+
 
 
 
