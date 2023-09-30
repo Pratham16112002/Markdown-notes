@@ -77,6 +77,9 @@ All the resources of the server are interrupted by those request and server is u
 It is a type of malicious attack in which some how attacker gains the access to user data and encrypts all the files, In return attacker want ransom in order to get the decryption key to gain access to the system. 
 It is also intended to attack the availability of the data. 
 
+## Web attacks
+Those malicious attack which tends to 
+There are various web-attacks like CSRF, XSS attack 
 
 
 
