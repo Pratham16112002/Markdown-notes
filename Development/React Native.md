@@ -196,4 +196,14 @@ This hook automatically updates the height and width or font size  when the scre
 ### KeybordAvoidingView
 Will automatically adjust the height, position or bottom based on the keyboard remains visible while virtual keyboard is displayed. 
 
+```tsx
+     <KeyboardAvoidingView
+        style={styles.screen}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      >
+```
+
+It prevent the content from being hidden behind the keyboard. 
+
+**Behavior** : This  prop tells how to react to the presence of keyboard. 
 
