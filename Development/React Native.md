@@ -173,5 +173,13 @@ This is a API build into react-native library.
 It is not a component but a java script object 
 
 To the device dimensions we do : 
+```tsx
+const deviceWidth = Dimensions.get('window').width
+const deviceHeight = Dimensions.get('window').height
 ```
-```
+
+`.get('window')` vs `.get('screen')`
+
+In case of IOS both means the same. 
+In case of Android window means only the display area excluding the status bar of the mobile screen, where as screen in android means the display area including the status bar of the mobile screen. 
+
