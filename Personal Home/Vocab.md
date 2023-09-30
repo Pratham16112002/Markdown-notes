@@ -1,10 +1,10 @@
 
-envy : → Jealousy 
-reckon → to think or conclude. 
-Polarization → Division.
-Utopia → an ideal perfect place. 
-Oblivion → act of being forgetfulness 
-Sovereignty → Complete independence 
+envy : → Jealousy. <br>
+reckon → to think or conclude. <br>
+Polarization → Division. <br>
+Utopia → an ideal perfect place. <br>
+Oblivion → act of being forgetfulness. <br> 
+Sovereignty → Complete independence. <br>
 Clandestine → kept secret or done secretively 
 Stoicism → the quality of experiencing pain or trouble without complaining or showing your emotions. 
 resentment→ a feeling of angry displeasure at something regarded as a wrong, insult, or injury.
@@ -156,32 +156,34 @@ deliberately : intentionally or consciously.
 polarize : divide. 
 prodigal : spending extravagantly ( money or anything ). 
 deify : worship or regard as a god. 
-craven : very cowardly. 
-disingenuous : a person who speaks dishonestly. 
-misnomer : a name that does not suit what it refers to. 
-contention : the disagreement that results from opposing arguments. 
-futile : having no effect. 
-congenial : friendly or neutral or hospitable . 
-belie : cover something up , mask.
-mortify : cause someone to feel very embarrassed. 
-incensed : very angry.
-dogmatic : if you are dogmatic , then you think that you are right even if you're not, and think everyone else is wrong or doctrinaire. 
-iconoclastic : criticizing or attacking any belief or institution or heterodox.
-ubiquitous : seeming to everywhere. 
-scanty : smaller in size or amount that is considered necessary or hoped for. 
-omnipresent : present or having an effect everywhere every time. 
-acute : If a bad situation is acute , it causes severe problem or damage. 
-frugal : careful when using money or food. 
-stingy : a person is stingy if he / she is unwilling to spend money. 
-capricious : changing mood or behavior suddenly and unexpectedly or fickle or mercurial or vacillating.
-humdrum  ( Mundane , Dreary , Monotonous ) : having no excitement or interest . 
-austere ( spartan , stark , ascetic ): very harsh , hard , severe. 
-wary  ( circumspect , chary , heedful ) : not completely trusting. 
-puerile ( juvenile , jejune ): behaving in a silly way , not an adult. 
-loquacious ( garrulous , voluble , prolix ) : some one who talks a lot. 
-flexible : expedient or conceivable . 
-tranquil : calm and peaceful without noise , worry , etc. 
-zealous : eager or enthusiastic . 
+craven : very cowardly. <br>
+disingenuous : a person who speaks dishonestly. <br>
+misnomer : a name that does not suit what it refers to. <br>
+contention : the disagreement that results from opposing arguments. <br> 
+futile : having no effect. <br>
+congenial : friendly or neutral or hospitable . <br>
+belie : cover something up , mask. <br>
+mortify : cause someone to feel very embarrassed. <br>
+incensed : very angry. <br>
+dogmatic : if you are dogmatic , then you think that you are right even if you're not, and think everyone else is wrong or doctrinaire. <br>
+iconoclastic : criticizing or attacking any belief or institution or heterodox. <br>
+ubiquitous : seeming to everywhere. <br>
+scanty : smaller in size or amount that is considered necessary or hoped for. <br>
+omnipresent : present or having an effect everywhere every time. <br>
+acute : If a bad situation is acute , it causes severe problem or damage. <br>
+frugal : careful when using money or food. <br>
+stingy : a person is stingy if he / she is unwilling to spend money.<br> 
+capricious : changing mood or behavior suddenly and unexpectedly or fickle or mercurial or vacillating.<br>
+humdrum  ( Mundane , Dreary , Monotonous ) : having no excitement or interest . <br>
+austere ( spartan , stark , ascetic ): very harsh , hard , severe. <br>
+wary  ( circumspect , chary , heedful ) : not completely trusting. <br>
+puerile ( juvenile , jejune ): behaving in a silly way , not an adult. <br>
+loquacious ( garrulous , voluble , prolix ) : some one who talks a lot.<br> 
+flexible : expedient or conceivable . <br>
+tranquil : calm and peaceful without noise , worry , etc. <br>
+zealous : eager or enthusiastic . <br>
+
+
 
 
 
