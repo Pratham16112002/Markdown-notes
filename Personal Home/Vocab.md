@@ -191,6 +191,7 @@ Materialize : happen, take place. <br>
 scuffle : fight , struggle. <br>
 flourish ( prosper ): develop or grow. <br>
 crumble ( disintegrate ) : fall down , fall apart. <br>
+remarkable : surprise. <br>
 
 
 
