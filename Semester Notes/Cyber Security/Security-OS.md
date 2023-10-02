@@ -87,5 +87,44 @@ Though the information is encryption but anyone can access that information if a
 
 **Wired Equivalent Privacy** <br>
 It is the eariliest security protocol.<br>
-It uses 40 bit encryption key for encrypting the data.<br>
+It uses 40 bit encryption key for encrypting the data along with a 24 bit initialization vector.<br>
 All traffic in this protocol uses same static key.<br>
+The encryption algorithm used is every weak which is RC4 encryption.<br>
+
+![WEP ](../../assets/WEP-ss.png)
+
+#### WAP protocol
+
+**Wifi protected access** <br>
+It is better security protocol then WEP. <br>
+It uses stronger encryption algorithm like (TKLP).<br>
+Uses dynamically changes its key.<br>
+Prevents attacker from creating their own encryption key to match the one used to secure the network.<br>
+Uses MIC (Message Integrity Check) to make sure that attacker has not altered the packets of the network.<br>
+
+**WPA 2** : <br>
+
+Provides stronger provides even stronger encryption algorithm then WPA.
+Uses Advanced Encryption Standard.<br>
+WPA 2 is designed to be backward compatible with WPA.
+
+**WPA 3** : <br>
+
+It is the most latest wireless protcol used today.<br>
+Uses the most secure encryption algorithm called SAE (Simultaneous Authentication of Equals).<br>
+It is resistant to all brute force attacks.<br>
+Also comes with the backward compatibility with previous versions of WPA's.<br>
+
+## DOS
+
+## DDOS
+
+### Difference between DOS and DDOS attack
+
+| DOS                                                                      | DDOS                                                                  |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------------- |
+| Denial of service attack.                                                | Distributed Denial of service attack.                                 |
+| In DOS a single system is targeted.                                      | In DDOS multiple systems are targeted.                                |
+| Victim's machine is loaded with packets sent from a single system.       | Victim's machine is loaded with packets sent from multiple locations. |
+| Can be blocked easily, since packets are comming from only one location. | Harder to block, packets are comming from different IP addresses.     |
+| Easily traceable                                                         | Difficult to trace                                                    |
