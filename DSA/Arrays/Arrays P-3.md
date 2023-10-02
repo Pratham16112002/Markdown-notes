@@ -1,23 +1,22 @@
-
 ## Minimum array length required to after pair removal
-<span style='color:lightgreen;'> Very good question</span> 
 
-Input :  `nums = [1,3,4,9]`
+<span style='color:lightgreen;'> Very good question</span>
+
+Input : `nums = [1,3,4,9]`
 
 Output : `0`
 
 [Link to the problem 🍻 ](https://leetcode.com/problems/minimum-array-length-after-pair-removals/)
 
-Approach : 
+Approach :
 
-1. We need to create a map to count the frequency of each element in the array and then store it in a HashMap. 
+1. We need to create a map to count the frequency of each element in the array and then store it in a HashMap.
 2. Get the element with the maximum frequency.
-3. Compare the maximum frequency with n/2 
-    
-    Because if it is less than the n/2 then it will get cancelled by other half of the array, In the other case where it is greater than n/2 then the remaining elements is equal to maxi - ( n - maxi ) . 
-    
-    Note in the less than case if the array length is even then all the duplicates of that element will get cancelled where as if array length is odd then there will always exist one element which will not get cancelled so we return 1. 
-    
+3. Compare the maximum frequency with n/2
+
+   Because if it is less than the n/2 then it will get cancelled by other half of the array, In the other case where it is greater than n/2 then the remaining elements is equal to maxi - ( n - maxi ) .
+
+   Note in the less than case if the array length is even then all the duplicates of that element will get cancelled where as if array length is odd then there will always exist one element which will not get cancelled so we return 1.
 
 ```cpp
 public:
@@ -43,17 +42,21 @@ public:
     }
 };
 ```
+
 ## Beautiful Tower
-You will be given an array of maximum possible heights , where each element represents the maximum height possible. 
+
+You will be given an array of maximum possible heights , where each element represents the maximum height possible.
 <span style='color:blue;'>Very Intuitive Question</span>
-You  need to make that a tower height that is beautiful 
+You need to make that a tower height that is beautiful
+
 1. `1<= height[i] <= maxHeight[i]`
-2. height should be mountain. 
-**Mountain**
-1. For all `0 < j <= i`, `heights[j - 1] <= heights[j]`
-2. For all `i <= k < n - 1`, `heights[k + 1] <= heights[k]`
-Brute Approach : 
-For every possible element we will try to make mountain and check for the maximum sum tower. 
+2. height should be mountain.
+   **Mountain**
+3. For all `0 < j <= i`, `heights[j - 1] <= heights[j]`
+4. For all `i <= k < n - 1`, `heights[k + 1] <= heights[k]`
+   Brute Approach :
+   For every possible element we will try to make mountain and check for the maximum sum tower.
+
 ```cpp
 int makeMount(int index, std::vector<int> &num) {
   int n = num.size();
@@ -84,5 +87,44 @@ int makeMount(int index, std::vector<int> &num) {
   return total_sum;
 }
 ```
-This logic will run for each index of the array. 
-Time complexity :  $O(n^2)$ , Space complexity : $O(1)$. 
+
+This logic will run for each index of the array.
+Time complexity : $O(n^2)$ , Space complexity : $O(1)$.
+
+## Minimum Operations to make array empty
+
+<span style='color:red;'>Very easy question but intuitive</span><br>
+**Input** `nums = [2,3,3,2,2,4,2,3,4]`<br>
+**Output** `4`<br>
+
+> If not able to make the array empty then return -1 <br>
+
+As we need to return the minimum operations then we must start dviding the number by 3 First. <br>
+
+$$count =  ceil \left(  \dfrac{ count  }{ 3 \cdot   \left( 1.0  \right)    }    \right)   $$
+
+This is the formula we will be using for this question. <br>
+
+The only condition where we will not able to make operation is 1.<br>
+
+```cpp
+class Solution {
+public:
+    int minOperations(vector<int>& nums) {
+        unordered_map<int,int> mp;
+        for(int i = 0 ; i<nums.size() ; i++){
+            mp[nums[i]]++;
+        }
+        int minimum_operations = 0;
+        for(auto it : mp){
+            if(it.second == 1){
+                return -1;
+            }
+            minimum_operations += ceil(it.second/(3*(1.0)));
+        }
+        return minimum_operations;
+    }
+};
+```
+
+Time complexity : $O(n)$ , Space Complexity : $O(m)$ , where m is the number of unique element present in the given array.<br>
