@@ -1,2 +1,3 @@
-# Obsidian
-A secure repository for all your Obsidian notes.
+# Markdown notes
+
+A secure repository for all your Markdown notes.
