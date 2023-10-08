@@ -90,14 +90,14 @@ It is the method of using application programs to recover deleted or forgotten p
 
 #### Cookie replay attack / Session Hijacking Attack
 
-In this type of attack, the attacker intercepts and with the help of valid user session keys gains unauthorized access to the web-application or website.<br>
+In this type of attack, the attacker intercepts and with the help of valid user session keys present in the local cookies of the victim gains unauthorized access to the web-application or website.<br>
 Cookies are small peices of information that are stored in the device that contains the information related to their session, such as session-ID, tokens, other session-related data.<br>
 By intercepting cookies, an attacker can impersonate a legitimate user and potentially gain access to their account.
 
 **Prevention** : <br>
 
 1. Always use HTTPS.
-2. Secure cookies : enable the secure flag in the cookies to make sure that cookies are always transmitted over secure HTTPS.
+2. Secure cookies : enable the secure flag in the cookies to make sure that cookies are always transmitted over secure encrypted channel.
 3. Use Security Headers : use security headers like CSP (Content Security Policy).
 
 ### Database security threats
@@ -106,7 +106,7 @@ Certainly database security is crucial for protecting sensitive information and 
 
 1. **Unauthorized access** : <span style='color:red;'>SQL Injection,</span> the attacker tries to manipulate the input fields of the web-application and inject malicious SQL query which leads to unathorized access to database.
 2. **Data Leakage** : Attacker try to gain access to the user data stored in database and tries to sell the data to dark-web.
-3. **Weak or Unpatched Softwares** : Software application with not the latest update always have known vulnerabilities that attacker will exploit easily.
+3. **Weak or Unpatched Softwares** : Software application with not the latest update always have known vulnerabilities that attacker will exploit them easily.
 4. **DDOS**
 5. **Privilege escalation** : People with a restricted privilege try to escalate their privilege to gain unauthorized access.
 6. **Secure database backups** : The backups of the database should be done and secured properly.
@@ -135,3 +135,24 @@ In SQL Injection attack, the attacker exploit the vulnerability of handling unva
 2. **Least Privilege**
 3. **Web-application firewalls**
 4. **Update the software with latest security patches**
+
+## Data Mining & Cyber security
+
+**Data Mining** : is the process of analyzing information, discovering new patterns and data, predicting future trends. It is often used in scientific researches, customer relations, business development even in cyber security field.<br>
+Data mining has helped attackers in finding new vulnerabilities & cyber attacks, on the other hand it has also helped cyber security professionals in developing ways to prevent and detect new attacks & vulnerabilities.<br>
+Data mining helps you to analyze huge datasets quickly and analyze its hidden patterns, which helps cyber security processionals to develop efficient solutions to malware detection field.<br>
+Though, the final result depends upon the data which is in mining.
+
+Cyber security technique which all possible due to data mining are :
+
+1. **Malware detection** : while developing security softwares, developers are able to increase the speed, analyses, accuracy of the malware detection solutions as well as zero-day attacks.<br>
+   There are basically two types of malware detection strategies :
+   <br>
+   - **Anomaly detection** : In this type of malware detection the behavior of the system or network is monitored, if any deviation occurs in the normal behavior of the system or network then malware is detected. Can detect known as well as unknown malware attacks.
+   - **Misuse detection** : It is usually signature based detection, attacker pattern are constantly matched with the current patterns are generate alert, if any match is found in the system or network. Can only detect only known attacks. \* **Hybrid detection** : It is the combination of both Anomaly detection and Misuse detection.
+2. **Intrusion detection** : Almost all the cybercrimal groups and cybercriminals are always looking to gain unauthorized access to the web-servers of organizations. Data mining techniques can help to analyze the anomolous behavior or patterns in the system or network and prevent those cybercrimes from happening.<br>
+   There are basically two types of IDS :<br>
+   - Host based.
+   - Network based.
+3. **Farud detection** : Detection of a fraud is very challenging because these attacks are well-hidden and attacker try new fraud-pattern every time which are difficult to guess.<br>
+   But with Data mining technique along with Machine learning, Fraudulent activities can easily be detected.

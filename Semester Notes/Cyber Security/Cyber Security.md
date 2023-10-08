@@ -22,7 +22,7 @@ A electronic signature is added with the data while transmission and when receiv
 Make sure that data should be available to the right person when it is needed.<br>
 System should be reliable and accessible anytime.<br>
 **Redundancy** :
-My having all the data duplicated in organization makes sure data is accessible anytime, if one server fails the the duplicate data can be transferred immediately.<br>
+Having all the data duplicated in organization makes sure data is accessible anytime, if one server fails the the duplicate data can be transferred immediately.<br>
 **Regular Backups** :
 To make sure that in case of any damage to data, data can be easily restored.<br>
 **24x7 Power Availability**<br>
