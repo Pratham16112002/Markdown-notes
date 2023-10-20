@@ -82,7 +82,7 @@ Both worms and viruses are malicious program a computer system, without the user
 
 ### Zombie & Botnets
 
-**Zombies** : These are the system which are already affected by some viruses and the attackers as full control over the system, Can be remotely controlled inorder to perform malicious activities, used for DDOS , phishing , spamming, etc.<br>
+**Zombies** : These are the system which are already affected by some viruses and the attackers has full control over the system, Can be remotely controlled inorder to perform malicious activities, used for DDOS , phishing , spamming, etc.<br>
 **Botnets** : It is a computer network compromised by a cybercrime group and that group has access to each and every zombie in the network.<br>
 **Botnets** are only created by cybercrime group when they need some high computational power for an attack, more likely an DDOS attacks.<br>
 
