@@ -207,6 +207,64 @@ It prevent the content from being hidden behind the keyboard.
 
 ## Platform
 
+[Click Here](https://reactnative.dev/docs/platform)
+
 It is an API built in react native.
 It has multiple props you check out them here
-[Click Here](https://reactnative.dev/docs/platform)
+
+**Example** : <br>
+Suppose you want to change the borderWidth property, according to the Platform :
+
+1. **Conditional statement** : `borderWidth: Platform.OS === 'android' ? 2 : 0`
+2. **Platform.select()** : Returns the most fitting value for the platform you are currently running on <br>`borderWidth: Platform.select({ ios: 0, android: 2 }),`<br>
+
+##### Status bar
+
+Component used to control the app's status bar. Typically at the top of the screen, that display the time and battery percentage and Cellular information, other status icons.<br>
+<span style='color:DodgerBlue;font-weight:bold;'>Has a style arguemnt</span> used to set the dark and light mode for the status-bar.
+
+### React Navigation
+
+Native Stack Navigator provides a way for your app to transition between screens where each new screen is placed on top of a stack.
+
+```tsx
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+```
+
+```tsx
+const Stack = createNativeStackNavigator();
+```
+
+> This will create an object of createNativeStackNavigator.
+
+```tsx
+<NavigationContainer>
+  <Stack.Navigator>
+    <Stack.Screen name="MealsCategories" component={CategoryScreen} />
+    <Stack.Screen name="MealsOverView" component={MealOverviewScreen} />
+  </Stack.Navigator>
+</NavigationContainer>
+```
+
+> Wrap the main component within the NavigationContainer
+
+**useNavigation** : we can use to get access to the navigation object.<br>
+useful when we cannot pass the navigation prop into the component directly.<br>
+
+```tsx
+interface RootStackParamList {
+  MealsOverView: {
+    categoryId: number;
+  };
+}
+
+const navigation =
+  native.useNavigation<
+    native.NavigationProp<RootStackParamList, "MealsOverView">
+  >();
+
+navigation.navigate("MealsOverView", {
+  categoryId: parseInt(item.id, 10),
+} as any);
+```

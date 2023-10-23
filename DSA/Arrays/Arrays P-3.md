@@ -128,3 +128,46 @@ public:
 ```
 
 Time complexity : $O(n)$ , Space Complexity : $O(m)$ , where m is the number of unique element present in the given array.<br>
+
+### Minimum sum of mountain triplet
+
+<span style='color:Tomato'>Medium Level Question</span>
+
+You will be given **0-Indexed** array.<br>
+Need to find a triplet which satisfies the condition for (i, j, k): <br>
+
+1. $i<j<k$
+2. $nums[i]<nums[j]$ and $nums[j]>nums[k]$
+
+**Approach**:<br>
+Calculate the left_min_prefix and right_min_prefix of the given array.<br>
+
+**Code**: <br>
+
+```cpp
+int solve(vector<int> &nums){
+  int curr_idx = 1;
+  int n = nums.size();
+  vector<int> left_min(n);
+  left_min[0] = nums[0];
+  for(int i = 1 ; i<n ; i++){
+   left_min[i] = min(left_min[i-1],nums[i]);
+  }
+  vector<int> right_min(n);
+  right_min[n-1] = nums[n-1];
+  for(int i = n -2 ; i>=0 ; i--){
+    right_min[i] = min(right_min[i+1],nums[i]);
+  }
+  int mini = 1e9;
+ for(int i = 1 ; i<n-1 ; i++){
+    if(nums[i] > left_min[i-1] && nums[i] > right_min[i+1]){
+      mini = min(mini,nums[i] + left_min[i-1] + right_min[i+1]);
+    }
+ }
+ return mini;
+}
+```
+
+Time complexity : $O(n+n+n)$, Space complexity : $O(2n).<br>
+
+Taking too much space... 😵‍💫
