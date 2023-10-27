@@ -268,3 +268,86 @@ navigation.navigate("MealsOverView", {
   categoryId: parseInt(item.id, 10),
 } as any);
 ```
+
+#### Passing Data
+
+We can also pass data with the useNavigation hook with built in route prop.
+
+```tsx
+navigation.navigate("MealsOverView", {
+  categoryId: item.id,
+} as any);
+```
+
+here categoryId is sent as a parameter to the MealsOverView screen.
+
+```tsx
+type props = NativeStackScreenProps<RootStackParams, "MealsOverView">;
+```
+
+`{ route }: props`<br>
+**Access the parameter like this:** <br>
+`{route.params.categoryId}`
+
+### Options Stack Navigator
+
+To configure each Stack Screen in we can use options argument.<br>
+[Options](https://reactnavigation.org/docs/stack-navigator/)
+
+**To configure the entire Stack Navigator**, there is an arguemnt called screenOptions which will set the options for entire multiple stack screen nested into Stack Navigator.
+
+```tsx
+<Stack.Navigator
+          screenOptions={{
+            headerStyle: { backgroundColor: '#350401' },
+            headerTintColor: 'white',
+            contentStyle: { backgroundColor: '#3f2f25' }
+          }} >
+```
+
+here we can put all the options that we want in all the stack screens.
+
+<span style='color:SlateBlue;'>In case of override of options,</span> options in the specific Stack screen will be considered.<br>
+
+#### useEffect & useLayoutEffect
+
+- Does the similar thing.
+- **useLayoutEffect** is called before the user can see the visual changes, where as **useEffect** will be called after the user is able to see the visual changes.<br>
+
+> Type definition ( typescript ) for vector icon in react native <br> `icon: keyof typeof Ionicons.glyphMap`
+
+#### React Native Drawer
+
+**Snippet** : <br>
+
+```tsx
+<Drawer.Navigator
+  screenOptions={{
+    headerStyle: { backgroundColor: "#3c0a6b" },
+    headerTintColor: "white",
+    drawerActiveBackgroundColor: "#f0e1ff",
+    drawerStyle: {
+      backgroundColor: "#ccc",
+    },
+  }}
+>
+  <Drawer.Screen
+    name="Welcome"
+    component={WelcomeScreen}
+    options={{
+      drawerLabel: "Welcome Screen",
+      drawerIcon: ({ color }) => <Ionicons name="home" color={color} />,
+    }}
+  />
+  <Drawer.Screen
+    name="User"
+    component={UserScreen}
+    options={{
+      drawerLabel: "User Screen",
+      drawerIcon: ({ color }) => <Ionicons name="skull" color={color} />,
+    }}
+  />
+</Drawer.Navigator>
+```
+
+> The drawerIcon accepts a function which returns a React Node when some parameters like <span style='color:MediumSeaGreen'>color,focused,size</span> is given.

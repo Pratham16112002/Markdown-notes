@@ -171,3 +171,52 @@ int solve(vector<int> &nums){
 Time complexity : $O(n+n+n)$, Space complexity : $O(2n).<br>
 
 Taking too much space... 😵‍💫
+
+### Minimum groups to create assignment
+
+<span style='color:tomato'>Very difficult problem</span>
+
+**Conditions** : <br>
+
+1. Divide the array into groups.
+2. Each group should contain elements with same value, the difference between no of elements between the no of elements in the groups should not be greater than 1.
+
+**Thinking** : <br>
+
+- Since, grups with each value number are required, so taking a frequency map should be way to go.
+- Because of group constraints we can only make group size maximum to the frequency of the minimum element in the given array.
+
+**Approach** : <br>
+
+1. mp &larr; map[el]++.
+2. freq &larr; mp.
+3. freq &larr; sort(freq).
+4. result = 1e9
+5. for (i=1 to min(freq)):
+6. result = min(result,helper(,freq))
+7. return result
+
+<span style='color:Violet;font-weight:bold;'>Helper method</span> :<br>
+
+1. result = 0.
+2. for(each f in freq):
+3. groups &larr; f/partition-size;
+4. remainder &larr; f%partition-size;
+5. if remainder > groups
+6. return <span style='color:red'>Inf</span>
+7. result &larr; result + ceil(f/partition-size+1);
+8. end for.
+9. return result
+
+**Reason**
+$$ceil \left(  \dfrac{ f  }{ partition+1  }    \right)  $$
+
+It takes care of both the case when parition-size + 1 divides frequency & parition-size doesn't divides the frequency.
+
+Time complexity : $O(n+d+dlogd+m*d)$.<br>
+
+- n is the number of elements.
+- d is the number of distinct elements.
+- m is the minimum frequency of the given frequency map.
+
+Space complexity : $O(n+n)$ &rarr; $O(2n)$ &rarr; $O(n)$.

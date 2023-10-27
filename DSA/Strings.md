@@ -241,3 +241,12 @@ int n1 = s1.length();
 ```
 
 Time complexity : $O(nlogn + mlogm + n)$ , Space complexity : $O(1)$.
+
+### Anagrams
+
+Two strings are said to be anagrams if : <br>
+1. One string can become another string and vice-versa. 
+2. Frequency of each character in the strings is same.
+3. Size of strings should be same as well. 
+
+
