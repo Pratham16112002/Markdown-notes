@@ -351,3 +351,25 @@ here we can put all the options that we want in all the stack screens.
 ```
 
 > The drawerIcon accepts a function which returns a React Node when some parameters like <span style='color:MediumSeaGreen'>color,focused,size</span> is given.
+
+> In Stack Navigator the option to color the content is `contentStyle = {}`, where as in Drawer Navigator the option to color the content is `sceneContainerStyle: { backgroundColor: '#350401' },`
+
+> In javascript `getMonth()` method returns month number with 0 based indexing, make sure to add 1 to it.
+
+#### React Navigation
+
+- The `Navigator` have a special property called **screen options**.
+- Contains the configuration for all the screens present inside it.
+- The screen options also receive the navigation prop  reference like 👇.
+
+```tsx
+ screenOptions={({ route, navigation }) => ({
+    title: route.params.title,
+  })}
+```
+
+> To convert a expression to boolean expression we can do `const isEditing = !!editExpenseId;`.
+
+
+
+

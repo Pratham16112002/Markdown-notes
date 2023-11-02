@@ -1,37 +1,36 @@
-
 ## Detect Cycle in a linked list
 
-Please tell only this approach to the interviewer ok 🙃. 
+Please tell only this approach to the interviewer ok 🙃.
 
-Fast and slow pointer approach. 
+Fast and slow pointer approach.
 
-Algo : 
+Algo :
 
-1. Initialize two pointers fast and slow pointer. 
-2. check for the base condition. 
-3. Do while loop until fast ≠ NULL 
-4. move fast as `fast = fast→next→next`. 
-5. move slow as `slow = slow→next`. 
+1. Initialize two pointers fast and slow pointer.
+2. check for the base condition.
+3. Do while loop until fast ≠ NULL
+4. move fast as `fast = fast→next→next`.
+5. move slow as `slow = slow→next`.
 6. if ( slow == fast ) return true;
-7. else return false. 
+7. else return false.
 
-Another Cross-Questioning can be done : 
+Another Cross-Questioning can be done :
 
-Tell the position of the node , due to which cycle is being generated. 
+Tell the position of the node , due to which cycle is being generated.
 
-Solution : 
+Solution :
 
-Its simple just take another pointer and point it to the head of the linked list. 
+Its simple just take another pointer and point it to the head of the linked list.
 
-move both the slow and entry pointer simultaneously until they both are equal. 
+move both the slow and entry pointer simultaneously until they both are equal.
 
-The point where both the slow and entry pointer are equal return that node. 
+The point where both the slow and entry pointer are equal return that node.
 
-Intuition : 
+Intuition :
 
 If their exist a cycle eventually both the fast and slow pointer will meet that’s for sure.
 
-Code : 
+Code :
 
 ```cpp
 ListNode* fast = head;
@@ -49,7 +48,7 @@ ListNode* fast = head;
         return  false;
 ```
 
-Time Complexity : 
+Time Complexity :
 
 $$
 O \left( n  \right)   
@@ -59,19 +58,18 @@ Space Complexity : Constant Space
 
 ## Reverse List in K Groups 🤯
 
-Very Important Question 
+Very Important Question
 
-Solve it using recursion. 
+Solve it using recursion.
 
 > `next = curr→next
 curr→next = prev
 prev = curr 
 curr = next`
-> 
 
-Remember the base case : 
+Remember the base case :
 
-if the size of the list to be reversed is less then the given k. 
+if the size of the list to be reversed is less then the given k.
 
 ```cpp
 Node* help(Node* head , int size , int k ){
@@ -104,45 +102,47 @@ Node* kReverse(Node* head, int k) {
 }
 ```
 
-Time Complexity : 
+Time Complexity :
 
 $$
 O \left( n  \right)  
 $$
->Visiting each node only one time. 
 
-Space Complexity : 
+> Visiting each node only one time.
+
+Space Complexity :
 
 $$
 O \left(  \dfrac{ n  }{ k  }   \cdot  k  \right) 
 $$
->First n/k is for each recursion stack space . and k is space taken for each reversal time.
+
+> First n/k is for each recursion stack space . and k is space taken for each reversal time.
+
 ## Check Weather linked list is Palindrome or Not
 
-Brute Force : 
+Brute Force :
 
-Using two arrays and storing the traversal and checking. 
+Using two arrays and storing the traversal and checking.
 
 TC : O(N)
 
 SC : O(N+N)
 
-Better : 
+Better :
 
-1. First use two pointer approach and traverse till fast pointer reach the second last node of the linked list. 
-2. Then reverse the linked list from slow’s next pointer and move slow pointer to the next node. 
+1. First use two pointer approach and traverse till fast pointer reach the second last node of the linked list.
+2. Then reverse the linked list from slow’s next pointer and move slow pointer to the next node.
 3. Take a dummy node and point it to the head of linked list .
-4. Now move both the dummy node and the slow pointer one by one and check if the values are equal or not. 
-5. If any miss match is found then return false. 
-    
-    This approached reduces the space complexity to constant.
-    
-    Time Complexity : 
-    
-    $$
-    O \left(  \dfrac{ n  }{ 2  }  + \dfrac{ n  }{ 2  }  + \dfrac{ n  }{ 2  }    \right)   
-    $$
-    
+4. Now move both the dummy node and the slow pointer one by one and check if the values are equal or not.
+5. If any miss match is found then return false.
+
+   This approached reduces the space complexity to constant.
+
+   Time Complexity :
+
+   $$
+   O \left(  \dfrac{ n  }{ 2  }  + \dfrac{ n  }{ 2  }  + \dfrac{ n  }{ 2  }    \right)   
+   $$
 
 ```cpp
 if(head == NULL || head->next == NULL){
@@ -168,18 +168,19 @@ if(head == NULL || head->next == NULL){
     return true;
 ```
 
-👆 is the best approach to solve this. 
+👆 is the best approach to solve this.
 
 ## Flatten a Linked List
 
-Very IMPORTANT Question. 
+Very IMPORTANT Question.
 
 I/O
 ![](https://i.imgur.com/DIzYwRm.png)
-O/P : 
+O/P :
 ![](https://i.imgur.com/10dHF06.png)
 
-Algo : 
+Algo :
+
 - We will merge two linked list l1 and l2 until the current→next and current pointer becomes NULL.
 - Merge Function will merge two linked list using the bottom pointer.
 
@@ -208,7 +209,7 @@ Node* merge(Node* a, Node* b){
 	return res->child;
 }
 
-Node* flattenLinkedList(Node* head) 
+Node* flattenLinkedList(Node* head)
 {
 	Node* current = head; // Maintain a separate pointer
     while(current && current->next){
@@ -220,39 +221,46 @@ Node* flattenLinkedList(Node* head)
 }
 ```
 
-Time Complexity : 
+Time Complexity :
 
 $$
 O \left( n \cdot  k  \right) 
 $$
->You can also say this O(total number of nodes).
 
-Space Complexity :  
+> You can also say this O(total number of nodes).
+
+Space Complexity :
+
 $$
 O \left( 1  \right)   
 $$
+
 ## Swap nodes in pairs
+
 Input : `head = [1,2,3,4]`
 Output : `[2,1,4,3]`
-Approach : 
+Approach :
+
 ```cpp
 ListNode* swapPairs(ListNode* head) {
         ListNode* newNode = new ListNode(0); // Creating an entire linked list
         newNode->next = head; // making it point to the head of the given ll
-        ListNode* temp = newNode; // Taking another pointer making to point to same head 
-        while(temp->next != NULL && temp->next->next != NULL){ // condition for traversal 
+        ListNode* temp = newNode; // Taking another pointer making to point to same head
+        while(temp->next != NULL && temp->next->next != NULL){ // condition for traversal
             ListNode* s1 = temp->next;
             ListNode* s2 = temp->next->next;
-            s1->next = s2->next; // Main swap logic 
+            s1->next = s2->next; // Main swap logic
             s2->next = s1;
-            temp->next = s2; // To connec the main linked list chain with the swapped one pairs 
-            temp = s1; // apparently we are trying to move the temp value because after swapping s1 pointer will be ahead of s2 pointer. 
+            temp->next = s2; // To connec the main linked list chain with the swapped one pairs
+            temp = s1; // apparently we are trying to move the temp value because after swapping s1 pointer will be ahead of s2 pointer.
         }
         return newNode->next;
     }
 ```
-Time complexity : $O(n)$ , Space complexity : $O(1)$. 
+
+Time complexity : $O(n)$ , Space complexity : $O(1)$.
 Recursive Approach:
+
 ```cpp
 ListNode* swapPairs(ListNode* head) {
        if(head == NULL || head->next == NULL){
@@ -265,4 +273,79 @@ ListNode* swapPairs(ListNode* head) {
         return second;
     }
 ```
+
 Time complexity : $O(n)$ , Space complexity : $O(n)$ , which is recursion stack space.
+
+## Rotate List
+
+![Alt text](image.png)
+
+<span style='color:Tomato'>Medium Level Problem</span>
+
+**Thinking** : <br>
+
+- Mainly their two cases $ K >= n $ or $ K < n $.
+- if $ K >= n $ then we need do $ K\%n $ to get the final rotation required.
+- Making the linked list circular linked list, while calcualating the size of the linked list.
+
+**Approach** : <br>
+
+```cpp
+ListNode* rotateRight(ListNode* head, int k) {
+        if(head == NULL || head->next == NULL) return head;
+        auto currr = getSize(head);
+        int size = currr.first;
+        ListNode* curr = currr.second;
+        k = k % size;
+        k = size - k ;
+        while(k!=0){
+            curr = curr->next;
+            k--;
+        }
+        head = curr->next;
+        curr->next = NULL;
+        return head;
+    }
+```
+
+Time complexity : $ O(n+n) $.
+
+### Deep Copy
+
+![Alt text](image-1.png)
+
+<span style='color:Tomato'>Random Pointer</span> is pointing to any node in the given linked list even null.
+
+**Thinking** : <br>
+We can hash old node address to new node address 🤔.
+
+**Approach** : <br>
+
+```cpp
+Node* copyRandomList(Node* head) {
+        if(head == NULL) return head;
+        Node* temp1 = head;
+        Node* dummyNode = new Node(0);
+        Node* temp2 = dummyNode;
+        unordered_map<Node*,Node*> mp;
+        while(temp1 != NULL){
+            Node* newNode = new Node(temp1->val);
+            mp.insert({temp1,newNode});
+            temp2->next = newNode;
+            temp2 = temp2->next;
+            temp1 = temp1->next;
+        }
+        temp1 = head;
+        temp2  = dummyNode->next;
+        while(temp1 != NULL){
+            Node* random_ptr = temp1->random;
+            Node* newNode = mp[random_ptr];
+            temp2->random = newNode;
+            temp2=temp2->next;
+            temp1=temp1->next;
+        }
+        return dummyNode->next;
+    }
+```
+
+Time complexity : $ O(n + n) $ , Space complexity : $ O(n) $ , for mapping the addresses.

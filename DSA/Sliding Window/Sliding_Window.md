@@ -58,6 +58,36 @@ O/P : `[0,6]`
 8. right++.
 9. if right != len(s).
 10. mp[s[right]]++.
-11. mp[s[left++]]--.
+11. mp[s[left]] &larr; mp[s[left]]+1.
+12. left++;
 
-Time complexity : $O()
+Time complexity : $ O(n) $.
+
+### Remove Duplicates
+
+_Note &rarr; given array will be sorted_.
+<span style='color:Tomato'>Two Pointer</span><br>
+Input : `nums = [0,0,1,1,1,2,2,3,3,4]`
+Output : `5, nums = [0,1,2,3,4,_,_,_,_,_]`
+
+**Note** :
+In question we are given not to take any auxiliary  array.
+
+**Brute Approach** :
+
+- Using extra space and storing unique element from the given array.
+- Require extra space of $ O(n) $.
+
+**Optimal Approach** :
+
+1. left &larr; 1 , right &larr; 1. (Since first element will not change its place)
+2. n &larr; array.size().
+3. while right < n
+4. if nums[right-1] == nums[right]
+5. nums[left] = nums[right]
+6. left++
+7. endIf
+8. right++
+9. endWhile
+
+Time complexity : $ O(n) $ , Complexity : $O(1) $.

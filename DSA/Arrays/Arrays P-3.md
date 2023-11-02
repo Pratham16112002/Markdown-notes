@@ -6,7 +6,7 @@ Input : `nums = [1,3,4,9]`
 
 Output : `0`
 
-[Link to the problem 🍻 ](https://leetcode.com/problems/minimum-array-length-after-pair-removals/)
+[Link to the problem 🍻](https://leetcode.com/problems/minimum-array-length-after-pair-removals/)
 
 Approach :
 
@@ -220,3 +220,99 @@ Time complexity : $O(n+d+dlogd+m*d)$.<br>
 - m is the minimum frequency of the given frequency map.
 
 Space complexity : $O(n+n)$ &rarr; $O(2n)$ &rarr; $O(n)$.
+
+### 3 sum
+
+<span style='color:Tomato'>Brute Force + Optimal</span>
+
+**Statement** : Find all triplets which adds up to zero.
+
+**Brute Force** :
+
+1. Running a loop for all the triplets possible and checking each.
+2. Optimal approach.
+
+For **Naive Approach** : Time complexity : $ O(n^3) $.
+
+**Optimal Approach** :
+[3 sum](https://youtu.be/jzZsG8n2R9A)
+
+**Code** :
+
+```cpp
+vector<vector<int>> solve(vector<int> &nums) {
+  // Sorting the given vector first.
+  sort(nums.begin(), nums.end());
+
+  int n = nums.size();
+  vector<vector<int>> helper;
+  for (int i = 0; i < n; i++) {
+    int first = nums[i];
+    if (i > 0 && nums[i] == nums[i - 1]) {
+      continue;
+    }
+    int left = i + 1, right = n - 1;
+    while (left < right) {
+      int sum = first + nums[left] + nums[right];
+      if (sum < 0) {
+        left++;
+      } else if (sum > 0) {
+        right--;
+      } else {
+        helper.push_back({nums[i], nums[left], nums[right]});
+        left++;
+        while (nums[left] == nums[left - 1] && left < right) {
+          left++;
+        }
+      }
+    }
+  }
+
+  return helper;
+}
+
+```
+
+Time complexity : $ O(nlogn+n^2)$ with constant space.
+
+### Rainwater Trapping
+
+<span style='color:Tomato'>Very hard problem.</span>
+
+**Brute Force Approach** :
+
+- As we know that the amount of water that can be collected in a location is equal to the minimum of the maximum elevation on both right and left side of the current location.
+- We can find the minimum of the maximum elevation on both right and left side of the current location.
+- Since we are looking for each index, hence the time complexity would be $ O(n^2) $.
+
+**Optimal Approach** :
+
+- Maintaning a left_max , right_max array .
+
+- ![Rainwater trap]('../../../../assets/Rainwatertrap.png).
+
+$$ Ans =  max \left( maxL \left| maxR  \right|    \right)  -H  $$
+
+**Code** :
+
+```cpp
+ int trap(vector<int>& heights) {
+  int n = heights.size();
+  vector<int> left_max(n), right_max(n);
+  left_max[0] = heights[0];
+  for (int i = 1; i < n; i++) {
+    left_max[i] = max(left_max[i - 1], heights[i]);
+  }
+  right_max[n - 1] = heights[n - 1];
+  for (int i = n - 2; i >= 0; i--) {
+    right_max[i] = max(right_max[i + 1], heights[i]);
+  }
+  int final_ans = 0;
+  for (int i = 0; i < n; i++) {
+    final_ans += min(left_max[i], right_max[i]) - heights[i];
+  }
+  return final_ans;
+}
+```
+
+Time complexity : $ O(3n) $ , Space complexity : $ O(2n) $ &rarr; $ O(n) $. <br>
