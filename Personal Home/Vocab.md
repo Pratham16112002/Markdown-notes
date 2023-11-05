@@ -23,7 +23,7 @@
     - conspicous &larr; very noticeable or attention drawing.
     - cursory &larr; quick (casual,passing).
     - daunting &larr; making you feel slightly frightened or worried
-      about your ability to ahieve something (intimidating).
+      about your ability to achieve something (intimidating).
     - deify &larr; to make someone or something into a god.
     - didactic &larr; convey something to someone which often has a moral
       or some eduction (instructive, educational)
@@ -31,11 +31,10 @@
       information , etc to a lot of people.
     - flout &larr; to intentionally not obey a rule, law (disobey).
     - homogenous &larr; similar kind (comparable, like).
-    - humdrum ( Mundane , Dreary , Monotonous ) &larr; having no
-      excitement or interest .
+    - humdrum ( Mundane , Dreary , Monotonous ) &larr; having no excitement or interest.
     - insipid &larr; not having strong taste or character (flavourless).
-    - loquacious &larr; talking a lot(chatty, talkitive).
-    - misanthropic &larr; not liking people.
+    - loquacious &larr; talking a lot(chatty, talkitive). misanthropic
+      &larr; not liking people.
     - misnomer &larr; a name that does not suit what it refers to (untitled).
     - negilgent &larr; careless, thoughtless.
     - obsequious &larr; being excessively eager and attentive
@@ -49,7 +48,45 @@
     - taciturn &larr; quiet, not speaking much.
     - wary &larr; untrusting feeling about something or someone.
 
+- Day 2
+  - adulterate (rampage,) &larr; to make anything weaker to lower its
+    quality.
+  - advocate (counsel) &larr; to publicly support or suggest an idea, development.
+  - aggrandize &larr; to make someone more powerful or important.
+  - alacrity &larr; speed and eagerness.
+  - ambivalent &larr; having two opposite feeling at the same time.
+  - ameliorate &larr; to make a bad and unpleasant situation better.
+  - amenable &larr; willing to accept or be influenced by a suggestion.
+  - anachronistic &larr; existing out of its time in history.
+  - audacity &larr; courage or confidence of a kind that other people
+    find shocking or rude.
+  - audacious &larr; fearless, showing willingness to take risk.
+  - avaricous &larr; greedy, extreme strong wish to get something.
+  - banal &larr; boring, ordinary, not original.
+  - benign &larr; pleasant and kind.
+  - brazen &larr; shamless, obvious, wihout any attempt to hide.
+  - calumny &larr; a statement which is not true and is inended to
+    damage other person.
+  - candid &larr; honest and telling the truth.
+  - castigate &larr; to criticize someone or something severely.
+  - caustic &larr; a chemical that burn or destroys anything.
+  - construe &larr; appreciation for something.
+  - contrite &larr; feeling very sorry and guilty for something,
+    that you have done.
+  - convoluted (complicated, complex) &larr; very twisted.
+  - covet (envy) &larr; to want to have something very much,
+    which belongs to someone else.
+  - craven &larr; very cowardly.
+  - decorum &larr; behaviour that is controlled, calm, polite.
+  - deft &larr; skilful, clever and quick.
+  - demur &larr; to express disagreement or refuse to do something.
+  - desciccate &larr; to remove moisture from something.
+  - diatribe &larr; a speech written that severely criticize
+    someone or something.
+  - incredulous &larr; not beleiving something.
+  - ingenuous &larr; honest, sincere, trusting.
 - reckon → to think or conclude.
+
 - Polarization → Division.
 - Utopia → an ideal perfect place.
 - Oblivion → act of being forgetfulness.

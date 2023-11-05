@@ -607,3 +607,13 @@ We can use the **TextInputProps** type definition present in react-native.
 
 Add to the TextInput like :
 `{...InputConfig}`
+
+#### Handle InputElement
+
+```tsx
+const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
+  setPassword(e.target.value);
+};
+```
+
+> **ChangeEvent** must be imported from react.
