@@ -70,7 +70,8 @@
   - candid &larr; honest and telling the truth.
   - castigate &larr; to criticize someone or something severely.
   - caustic &larr; a chemical that burn or destroys anything.
-  - construe &larr; appreciation for something.
+  - construe &larr; to understand the meaning, especially other
+    people's actions and statements,
   - contrite &larr; feeling very sorry and guilty for something,
     that you have done.
   - convoluted (complicated, complex) &larr; very twisted.
