@@ -145,7 +145,7 @@ Though, the final result depends upon the data which is in mining.
 
 Cyber security technique which all possible due to data mining are :
 
-1. **Malware detection** : while developing security softwares, developers are able to increase the speed, analyses, accuracy of the malware detection solutions as well as zero-day attacks.<br>
+1. **Malware detection** : while deve  loping security softwares, developers are able to increase the speed, analyses, accuracy of the malware detection solutions as well as zero-day attacks.<br>
    There are basically two types of malware detection strategies :
    <br>
    - **Anomaly detection** : In this type of malware detection the behavior of the system or network is monitored, if any deviation occurs in the normal behavior of the system or network then malware is detected. Can detect known as well as unknown malware attacks.
@@ -156,3 +156,4 @@ Cyber security technique which all possible due to data mining are :
    - Network based.
 3. **Farud detection** : Detection of a fraud is very challenging because these attacks are well-hidden and attacker try new fraud-pattern every time which are difficult to guess.<br>
    But with Data mining technique along with Machine learning, Fraudulent activities can easily be detected.
+
