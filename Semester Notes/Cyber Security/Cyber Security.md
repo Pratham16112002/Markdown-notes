@@ -1,3 +1,5 @@
+# Cyber security
+
 It is like digital security of computers, servers and data. It's a set of practices and technologies that prevents technologically powered devices from being hacked, damaged or stolen by bad actors on the internet .
 
 ## CIA
@@ -7,7 +9,7 @@ It is like digital security of computers, servers and data. It's a set of practi
 No Unauthorized access or restrict the access to authorized users only.<br>
 This means that sensitive data should not be disclosed to any unauthorized persons or systems.<br>
 **Security measures like encryption**<br> - By encrypting the data, we make sure that none other than the authorized person can see the data without the key to unlock the encryption.<br>
-**Access Controls**<br> - By some access control mechanism we can restrict the access to the data to some specific employees only , rather than every employee of the organization.
+**Access Controls**<br> - By some access control mechanism we can restrict the access to the data to some specific employees only , rather than every employee of the organization.<br>
 **Authentication** - By added some Biometrics, ( 2FA ) before accessing the data might increase its confidentiality of the data.<br>
 **Secure Transmission**<br> - By using some secure protocols like HTTPS instead of HTTP and SSL protocol.<br>
 <span style='color:red;font-weight:bold;'>Integrity</span><br>
@@ -17,15 +19,15 @@ No modification of data should be done by any unauthorized person or parties.<br
 **Digital Signatures** :
 A electronic signature is added with the data while transmission and when receiver receive the data then he/she verify the digital signature and make sure that data is not modified.<br>
 <span style="color:red;font-weight:bold;">Availability</span><br>
-Make sure that data should be available to the right person when he/she needs it.<br>
+Make sure that data should be available to the right person when it is needed.<br>
 System should be reliable and accessible anytime.<br>
 **Redundancy** :
-My having all the data duplicated in organization makes sure data is accessible anytime, if one server fails the the duplicate data can be transferred immediately.<br>
+Having all the data duplicated in organization makes sure data is accessible anytime, if one server fails the the duplicate data can be transferred immediately.<br>
 **Regular Backups** :
 To make sure that in case of any damage to data, data can be easily restored.<br>
-**24x7 Power Availability**
+**24x7 Power Availability**<br>
 **DOS protection** :
-Implementing DOS strategies, like rate limiting and traffic limiting.<br>
+Implementing DOS strategies, like rate limiting and traffic migration techniques.<br>
 
 > DDOS and DOS affect the availability of the data.<br>
 
@@ -49,11 +51,18 @@ Are special software which are designed to gain unauthorized access or exploit c
 
 ### Virus
 
-A computer virus is a program which is used to replicate it-self and spread from one computer device to another.<br>
-Often attaches itself to a legitimate program or files and spread through the computer device fast.<br>
+A computer virus is a program which is used by attackers for malicious purpose, viruses has the ability replicate them-self and spread from one location to another in the computer system.<br>
+Often attaches itself to a legitimate program or files and spread through the computer device faster.<br>
 **Direct infection** : When virus infect the computer system, every time the user open a specific infected program or file.<br>
 **Fast infection** : When virus infects the files whenever any file accessed by the program is infected.<br>
 **Slow infection** : When virus infects any new file or modified document.<br>
+
+## Logic bombs
+
+Malicious code written in the software program, or system codes that are triggered only when specific conditions are met.
+Can destory/harm/steal/modify/hijack the information systems.<br>
+Usually done by insider threats in an organiztions.<br>
+Detected by code reviews.
 
 ## Trojan horse
 
@@ -62,7 +71,8 @@ Some trojan horse also creates back-doors in the computer systems.<br>
 
 ### Worms
 
-worms are more dangerous then viruses.<br>
+Type of computer malware.<br>
+Worms are more dangerous then viruses.<br>
 Both worms and viruses are malicious program a computer system, without the users consent and replicates themselves.<br>
 <span style='color:red;'>Main Difference between virus and worm</span>
 
@@ -72,15 +82,15 @@ Both worms and viruses are malicious program a computer system, without the user
 
 ### Zombie & Botnets
 
-**Zombies** : These are the system which are already affected by some viruses and the attackers as full control over the system, Can be remotely controlled inorder to perform malicious activities, used for DDOS , phishing , spamming, etc.<br>
+**Zombies** : These are the system which are already affected by some viruses and the attackers has full control over the system, Can be remotely controlled inorder to perform malicious activities, used for DDOS , phishing , spamming, etc.<br>
 **Botnets** : It is a computer network compromised by a cybercrime group and that group has access to each and every zombie in the network.<br>
 **Botnets** are only created by cybercrime group when they need some high computational power for an attack, more likely an DDOS attacks.<br>
 
 ### Adware & Spyware
 
 **Adware** : These are the malwares which are designed to display advertisement to the user, They are not usually harmful to the computer system but they tends to steal information about the users such as search history, apps he/she uses, etc.<br>
-Adds corresponding to users behaviour is shown to the user.<br>
-**Spyware** : It is like a adware that spies on what the user is doing collect the information and provide it to the attacker, spyware unlike adware uses users device memory and keep running in the background.<br>
+Ads corresponding to users behaviour is shown to the user.<br>
+**Spyware** : It is like a malicous softwares that spies on what the user is doing collect the information and provide it to the attacker, spyware unlike adware uses users device memory and keep running in the background.<br>
 The best example of spyware would be keylogger, Adware, Trojan spyware.
 
 ## Denial of service attack
@@ -106,10 +116,10 @@ In this attack attacker injects malicious client side script into web-pages with
 2. Input validation and sanitization.
 3. Output encoding.
 4. Keeping software up to date.
-5. Using Content Security Policy.
+5. Using Content Security Policy, we make sure that which origins are allowed to load assets,scripts into the victim's browser.
 
 **DDOS attack** :
-It is type of large scale DOS attack in which attacker creates an army of botnets, all the botnets are remotely instructed to attack the web-server at a particular time, all the botnets send multiple requests to construe the web-servers, and make the web-server inaccessible to the original users.<br>
+It is type of large scale DOS attack in which attacker creates an army of botnet, all the botnets are remotely instructed to attack the web-server at a particular time, all of them start sending multiple requests to construe(interfare) the web-servers, and make the web-server inaccessible to the original legitimate users.<br>
 <span style='color:lightgreen;'>Prevention</span> :
 
 1. Implement features like rate limiting.
@@ -141,5 +151,5 @@ Web-server is tricked into believing that request is coming from the legitimate 
 2. **Email Spoofing** : Sending a malicious email to the user which looks like a email from a legitimate person.
 3. **Email Hacking** : Finding the password of the user's email.
 
-[OS Seurity](./Security-OS.md)
+[OS Seurity](./Security-OS.md)<br>
 [Security ConterMeasures](./Security-Counter-Measures.md)

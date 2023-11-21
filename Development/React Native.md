@@ -207,6 +207,169 @@ It prevent the content from being hidden behind the keyboard.
 
 ## Platform
 
+[Click Here](https://reactnative.dev/docs/platform)
+
 It is an API built in react native.
 It has multiple props you check out them here
-[Click Here](https://reactnative.dev/docs/platform)
+
+**Example** : <br>
+Suppose you want to change the borderWidth property, according to the Platform :
+
+1. **Conditional statement** : `borderWidth: Platform.OS === 'android' ? 2 : 0`
+2. **Platform.select()** : Returns the most fitting value for the platform you are currently running on <br>`borderWidth: Platform.select({ ios: 0, android: 2 }),`<br>
+
+##### Status bar
+
+Component used to control the app's status bar. Typically at the top of the screen, that display the time and battery percentage and Cellular information, other status icons.<br>
+<span style='color:DodgerBlue;font-weight:bold;'>Has a style arguemnt</span> used to set the dark and light mode for the status-bar.
+
+### React Navigation
+
+Native Stack Navigator provides a way for your app to transition between screens where each new screen is placed on top of a stack.
+
+```tsx
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+```
+
+```tsx
+const Stack = createNativeStackNavigator();
+```
+
+> This will create an object of createNativeStackNavigator.
+
+```tsx
+<NavigationContainer>
+  <Stack.Navigator>
+    <Stack.Screen name="MealsCategories" component={CategoryScreen} />
+    <Stack.Screen name="MealsOverView" component={MealOverviewScreen} />
+  </Stack.Navigator>
+</NavigationContainer>
+```
+
+> Wrap the main component within the NavigationContainer
+
+**useNavigation** : we can use to get access to the navigation object.<br>
+useful when we cannot pass the navigation prop into the component directly.<br>
+
+```tsx
+interface RootStackParamList {
+  MealsOverView: {
+    categoryId: number;
+  };
+}
+
+const navigation =
+  native.useNavigation<
+    native.NavigationProp<RootStackParamList, "MealsOverView">
+  >();
+
+navigation.navigate("MealsOverView", {
+  categoryId: parseInt(item.id, 10),
+} as any);
+```
+
+#### Passing Data
+
+We can also pass data with the useNavigation hook with built in route prop.
+
+```tsx
+navigation.navigate("MealsOverView", {
+  categoryId: item.id,
+} as any);
+```
+
+here categoryId is sent as a parameter to the MealsOverView screen.
+
+```tsx
+type props = NativeStackScreenProps<RootStackParams, "MealsOverView">;
+```
+
+`{ route }: props`<br>
+**Access the parameter like this:** <br>
+`{route.params.categoryId}`
+
+### Options Stack Navigator
+
+To configure each Stack Screen in we can use options argument.<br>
+[Options](https://reactnavigation.org/docs/stack-navigator/)
+
+**To configure the entire Stack Navigator**, there is an arguemnt called screenOptions which will set the options for entire multiple stack screen nested into Stack Navigator.
+
+```tsx
+<Stack.Navigator
+          screenOptions={{
+            headerStyle: { backgroundColor: '#350401' },
+            headerTintColor: 'white',
+            contentStyle: { backgroundColor: '#3f2f25' }
+          }} >
+```
+
+here we can put all the options that we want in all the stack screens.
+
+<span style='color:SlateBlue;'>In case of override of options,</span> options in the specific Stack screen will be considered.<br>
+
+#### useEffect & useLayoutEffect
+
+- Does the similar thing.
+- **useLayoutEffect** is called before the user can see the visual changes, where as **useEffect** will be called after the user is able to see the visual changes.<br>
+
+> Type definition ( typescript ) for vector icon in react native <br> `icon: keyof typeof Ionicons.glyphMap`
+
+#### React Native Drawer
+
+**Snippet** : <br>
+
+```tsx
+<Drawer.Navigator
+  screenOptions={{
+    headerStyle: { backgroundColor: "#3c0a6b" },
+    headerTintColor: "white",
+    drawerActiveBackgroundColor: "#f0e1ff",
+    drawerStyle: {
+      backgroundColor: "#ccc",
+    },
+  }}
+>
+  <Drawer.Screen
+    name="Welcome"
+    component={WelcomeScreen}
+    options={{
+      drawerLabel: "Welcome Screen",
+      drawerIcon: ({ color }) => <Ionicons name="home" color={color} />,
+    }}
+  />
+  <Drawer.Screen
+    name="User"
+    component={UserScreen}
+    options={{
+      drawerLabel: "User Screen",
+      drawerIcon: ({ color }) => <Ionicons name="skull" color={color} />,
+    }}
+  />
+</Drawer.Navigator>
+```
+
+> The drawerIcon accepts a function which returns a React Node when some parameters like <span style='color:MediumSeaGreen'>color,focused,size</span> is given.
+
+> In Stack Navigator the option to color the content is `contentStyle = {}`, where as in Drawer Navigator the option to color the content is `sceneContainerStyle: { backgroundColor: '#350401' },`
+
+> In javascript `getMonth()` method returns month number with 0 based indexing, make sure to add 1 to it.
+
+#### React Navigation
+
+- The `Navigator` have a special property called **screen options**.
+- Contains the configuration for all the screens present inside it.
+- The screen options also receive the navigation prop  reference like 👇.
+
+```tsx
+ screenOptions={({ route, navigation }) => ({
+    title: route.params.title,
+  })}
+```
+
+> To convert a expression to boolean expression we can do `const isEditing = !!editExpenseId;`.
+
+
+
+

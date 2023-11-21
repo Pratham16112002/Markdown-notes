@@ -6,7 +6,7 @@ Input : `nums = [1,3,4,9]`
 
 Output : `0`
 
-[Link to the problem 🍻 ](https://leetcode.com/problems/minimum-array-length-after-pair-removals/)
+[Link to the problem 🍻](https://leetcode.com/problems/minimum-array-length-after-pair-removals/)
 
 Approach :
 
@@ -128,3 +128,191 @@ public:
 ```
 
 Time complexity : $O(n)$ , Space Complexity : $O(m)$ , where m is the number of unique element present in the given array.<br>
+
+### Minimum sum of mountain triplet
+
+<span style='color:Tomato'>Medium Level Question</span>
+
+You will be given **0-Indexed** array.<br>
+Need to find a triplet which satisfies the condition for (i, j, k): <br>
+
+1. $i<j<k$
+2. $nums[i]<nums[j]$ and $nums[j]>nums[k]$
+
+**Approach**:<br>
+Calculate the left_min_prefix and right_min_prefix of the given array.<br>
+
+**Code**: <br>
+
+```cpp
+int solve(vector<int> &nums){
+  int curr_idx = 1;
+  int n = nums.size();
+  vector<int> left_min(n);
+  left_min[0] = nums[0];
+  for(int i = 1 ; i<n ; i++){
+   left_min[i] = min(left_min[i-1],nums[i]);
+  }
+  vector<int> right_min(n);
+  right_min[n-1] = nums[n-1];
+  for(int i = n -2 ; i>=0 ; i--){
+    right_min[i] = min(right_min[i+1],nums[i]);
+  }
+  int mini = 1e9;
+ for(int i = 1 ; i<n-1 ; i++){
+    if(nums[i] > left_min[i-1] && nums[i] > right_min[i+1]){
+      mini = min(mini,nums[i] + left_min[i-1] + right_min[i+1]);
+    }
+ }
+ return mini;
+}
+```
+
+Time complexity : $O(n+n+n)$, Space complexity : $O(2n).<br>
+
+Taking too much space... 😵‍💫
+
+### Minimum groups to create assignment
+
+<span style='color:tomato'>Very difficult problem</span>
+
+**Conditions** : <br>
+
+1. Divide the array into groups.
+2. Each group should contain elements with same value, the difference between no of elements between the no of elements in the groups should not be greater than 1.
+
+**Thinking** : <br>
+
+- Since, grups with each value number are required, so taking a frequency map should be way to go.
+- Because of group constraints we can only make group size maximum to the frequency of the minimum element in the given array.
+
+**Approach** : <br>
+
+1. mp &larr; map[el]++.
+2. freq &larr; mp.
+3. freq &larr; sort(freq).
+4. result = 1e9
+5. for (i=1 to min(freq)):
+6. result = min(result,helper(,freq))
+7. return result
+
+<span style='color:Violet;font-weight:bold;'>Helper method</span> :<br>
+
+1. result = 0.
+2. for(each f in freq):
+3. groups &larr; f/partition-size;
+4. remainder &larr; f%partition-size;
+5. if remainder > groups
+6. return <span style='color:red'>Inf</span>
+7. result &larr; result + ceil(f/partition-size+1);
+8. end for.
+9. return result
+
+**Reason**
+$$ceil \left(  \dfrac{ f  }{ partition+1  }    \right)  $$
+
+It takes care of both the case when parition-size + 1 divides frequency & parition-size doesn't divides the frequency.
+
+Time complexity : $O(n+d+dlogd+m*d)$.<br>
+
+- n is the number of elements.
+- d is the number of distinct elements.
+- m is the minimum frequency of the given frequency map.
+
+Space complexity : $O(n+n)$ &rarr; $O(2n)$ &rarr; $O(n)$.
+
+### 3 sum
+
+<span style='color:Tomato'>Brute Force + Optimal</span>
+
+**Statement** : Find all triplets which adds up to zero.
+
+**Brute Force** :
+
+1. Running a loop for all the triplets possible and checking each.
+2. Optimal approach.
+
+For **Naive Approach** : Time complexity : $ O(n^3) $.
+
+**Optimal Approach** :
+[3 sum](https://youtu.be/jzZsG8n2R9A)
+
+**Code** :
+
+```cpp
+vector<vector<int>> solve(vector<int> &nums) {
+  // Sorting the given vector first.
+  sort(nums.begin(), nums.end());
+
+  int n = nums.size();
+  vector<vector<int>> helper;
+  for (int i = 0; i < n; i++) {
+    int first = nums[i];
+    if (i > 0 && nums[i] == nums[i - 1]) {
+      continue;
+    }
+    int left = i + 1, right = n - 1;
+    while (left < right) {
+      int sum = first + nums[left] + nums[right];
+      if (sum < 0) {
+        left++;
+      } else if (sum > 0) {
+        right--;
+      } else {
+        helper.push_back({nums[i], nums[left], nums[right]});
+        left++;
+        while (nums[left] == nums[left - 1] && left < right) {
+          left++;
+        }
+      }
+    }
+  }
+
+  return helper;
+}
+
+```
+
+Time complexity : $ O(nlogn+n^2)$ with constant space.
+
+### Rainwater Trapping
+
+<span style='color:Tomato'>Very hard problem.</span>
+
+**Brute Force Approach** :
+
+- As we know that the amount of water that can be collected in a location is equal to the minimum of the maximum elevation on both right and left side of the current location.
+- We can find the minimum of the maximum elevation on both right and left side of the current location.
+- Since we are looking for each index, hence the time complexity would be $ O(n^2) $.
+
+**Optimal Approach** :
+
+- Maintaning a left_max , right_max array .
+
+- ![Rainwater trap]('../../../../assets/Rainwatertrap.png).
+
+$$ Ans =  max \left( maxL \left| maxR  \right|    \right)  -H  $$
+
+**Code** :
+
+```cpp
+ int trap(vector<int>& heights) {
+  int n = heights.size();
+  vector<int> left_max(n), right_max(n);
+  left_max[0] = heights[0];
+  for (int i = 1; i < n; i++) {
+    left_max[i] = max(left_max[i - 1], heights[i]);
+  }
+  right_max[n - 1] = heights[n - 1];
+  for (int i = n - 2; i >= 0; i--) {
+    right_max[i] = max(right_max[i + 1], heights[i]);
+  }
+  int final_ans = 0;
+  for (int i = 0; i < n; i++) {
+    final_ans += min(left_max[i], right_max[i]) - heights[i];
+  }
+  return final_ans;
+}
+```
+
+Time complexity : $ O(3n) $ , Space complexity : $ O(2n) $ &rarr; $ O(n) $. <br>

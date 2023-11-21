@@ -1,7 +1,7 @@
 ## Security OS
 
-Security in OS, refers to the measures and practice taken to protect the Operating system's data and resources attackers.<br>
-It is very critical to maintain the security of the operating systems because, it is the core foundation of all the softwares and programs running and once the OS is compromised then attacker has access to each and every data of the computer owner.<br>
+Security in OS, refers to the measures and practice taken to protect the Operating system's data and resources from attackers.<br>
+It is very critical to maintain the security of the operating systems because, it is the foundation of all the softwares and programs running and once the OS is compromised then attacker has access to each and every data of the computer owner.<br>
 
 #### Port scanning
 
@@ -9,14 +9,16 @@ Ports are the communication end-points through which the computer communicate wi
 Attacker always moniter the network for open ports and services running on the specific port number, once port is choosen by the hacker then the hacker is ready to launch the various attackes.<br>
 This technique is also used by security professionals to test the security of the OS.<br>
 
-#### Network Intrusion or MIM attack
+#### Network Intrusion or MITM attack
 
 In this attack attacker try to interfare or eavesdrops with the user's or organization network and spoof some request sent to the users, while the users believe that the data is comming from legitimate resources instead it is comming through attacker.<br>
 <span style='color:lightblue;'>Prevention</span> :
 
-1. Encryption.
-2. Using Digital Signatures.
-3. By wary of Email links & attachments.
+1. By using HTTPs instead of HTTP.
+2. Network segmentation.
+3. By implementing DNS security.
+4. Keeping softwares up to dates.
+5. Using VPN's.
 
 ### Rootkits
 
@@ -73,10 +75,17 @@ Bootloader is the first program which runs when the program starts whose main fu
 These attack are usually performed by the cybercriminals to destroy the CIA traid of the network system.<br>
 
 1. **DOS ( Denial of service attack )** : Multiple false request are made to the server in order to crash to web server, thus losing its ability to entertain legitimate users.
-2. **Packet Sniffing** : Sending Deceptive emails or messages that appears to come from trusted sources. The goal is to steal confidential information by this attack.
+2. **Packet Spoofing** : Sending Deceptive emails or messages that appears to come from trusted sources. The goal is to steal confidential information by this attack.
 3. **Zero Day Vulnerabilities** : Those softwares or programs which has a vulnerability but that vulnerability is not known to the vendor of the software yet or vendor has no official patch for that vulnerability.
 4. **SQL-Injection** : Attacker directly target the database of the web-sever, main aim is too get direct access to the database.
 5. **MITM attack** : Attacker tries to interfare and modify the commnunication happening between two endpoints in a network system.
+
+<span style='color:red;'>Prevention</span> :<br>
+
+1. Firewalls.
+2. Encryption of data transmitted over the network.
+3. **Network segmentation** : Dividing a larger network into smaller sub-networks, as maintaining a smaller network is easir than a larger network.
+4. Anti-virus softwares.
 
 ### Wireless security
 
@@ -93,7 +102,7 @@ The encryption algorithm used is every weak which is RC4 encryption.<br>
 
 ![WEP ](../../assets/WEP-ss.png)
 
-#### WAP protocol
+#### WPA protocol
 
 **Wifi protected access** <br>
 It is better security protocol then WEP. <br>
@@ -114,6 +123,7 @@ It is the most latest wireless protcol used today.<br>
 Uses the most secure encryption algorithm called SAE (Simultaneous Authentication of Equals).<br>
 It is resistant to all brute force attacks.<br>
 Also comes with the backward compatibility with previous versions of WPA's.<br>
+Uses <mark>DPP(Device Provisioning Protocol)</mark> which allows users to share the wifi key using OR codes and NFC's.
 
 ## DOS
 

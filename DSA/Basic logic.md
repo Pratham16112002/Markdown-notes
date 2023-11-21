@@ -1,13 +1,14 @@
-Given coordinates of 4 points, bottom-left and top-right corners of two rectangles. The task is to find the coordinates of the intersecting rectangle formed by the given two rectangles. 
+Given coordinates of 4 points, bottom-left and top-right corners of two rectangles. The task is to find the coordinates of the intersecting rectangle formed by the given two rectangles.
 ![](https://i.imgur.com/y6weQbf.png)
-Need to output the coordinates of the green shaded rectangular region. 
+Need to output the coordinates of the green shaded rectangular region.
 The bottom left coordinates will be:
 $x5=min(x1,x3)$
 $y6=min(y1,y3$
 The top right coordinates will be:
 $x7=max(x2,x4)$
 $y7=max(y2,y4)$
-if $x5>x7$ or $y6>y7$ then no intersection rectangle is formed. 
+if $x5>x7$ or $y6>y7$ then no intersection rectangle is formed.
+
 ```cpp
 void FindPoints(int x1, int y1, int x2, int y2, int x3, int y3, int x4,
                 int y4) {
@@ -39,3 +40,45 @@ void FindPoints(int x1, int y1, int x2, int y2, int x3, int y3, int x4,
             << " \n";
 }
 ```
+
+### Add Binary
+
+I/P : `a = "11", b = "1"`<br>
+
+O/P : `100`
+
+<span style='color:Orange'>Easy & Asked frequently</span>
+
+**Thinking** : <br>
+
+- We can iterate over the two string from the back.
+- Add the digits + carry % 2 to get the result.
+- $C_n=(D+C)/2$ , C new carry, D both digits , C previous carry.
+
+**Approach** : <br>
+
+```cpp
+string solve(string a, string b) {
+  int carry = 0;
+  int i = a.size() - 1;
+  int j = b.size() - 1;
+  int alen = a.size();
+  int blen = b.size();
+  string result = "";
+  while (i >= 0 || j >= 0 || carry != 0) {
+    int x = 0;
+    if (i >= 0 && a[i] == '1')
+      x = 1;
+    int y = 0;
+    if (j >= 0 && b[j] == '1')
+      y = 1;
+    result = to_string((x + y + carry) % 2) + result;
+    carry = (x + y + carry) / 2;
+    i--;
+    j--;
+  }
+  return result;
+}
+```
+
+Time complexity : $O(n)$.
