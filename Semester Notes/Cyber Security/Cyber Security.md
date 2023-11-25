@@ -7,7 +7,8 @@ It is like digital security of computers, servers and data. It's a set of practi
 <span style='color:red;font-weight:bold;'>Confidentiality</span><br>
 
 No Unauthorized access or restrict the access to authorized users only.<br>
-This means that sensitive data should not be disclosed to any unauthorized persons or systems.<br>
+This means that sensitive data should not be disclosed to any
+unauthorized persons or systems.<br>
 **Security measures like encryption**<br> - By encrypting the data, we make sure that none other than the authorized person can see the data without the key to unlock the encryption.<br>
 **Access Controls**<br> - By some access control mechanism we can restrict the access to the data to some specific employees only , rather than every employee of the organization.<br>
 **Authentication** - By added some Biometrics, ( 2FA ) before accessing the data might increase its confidentiality of the data.<br>
@@ -53,9 +54,23 @@ Are special software which are designed to gain unauthorized access or exploit c
 
 A computer virus is a program which is used by attackers for malicious purpose, viruses has the ability replicate them-self and spread from one location to another in the computer system.<br>
 Often attaches itself to a legitimate program or files and spread through the computer device faster.<br>
-**Direct infection** : When virus infect the computer system, every time the user open a specific infected program or file.<br>
-**Fast infection** : When virus infects the files whenever any file accessed by the program is infected.<br>
-**Slow infection** : When virus infects any new file or modified document.<br>
+<br>
+**Resident Virus** : This type of virus get stored in computer ram and
+and interfare with system operations. These type of viruses are very sneaky, because
+they attaches themselves to anti-virus software program files<br>
+<br>
+**Multi-partite Virus** : This type fo virus inject the entrie computer system by
+performing unauthorized access.<br>
+<br>
+**Direct Action Virus** : This type of virus attack a specific type of file only
+usually executables (.exe), these type of viruses are very easy to detect and remove.<br>
+<br>
+**Overwrite Virus** : This type of virus can overwrite content of a files or a
+folders.
+<br>
+**Boot Sector Virus** : This type of virus are easy to prevent because they spread through
+USB flash drives or infected email attachments, when activated it can also
+damage the boot record of the system.
 
 ## Logic bombs
 
@@ -66,8 +81,11 @@ Detected by code reviews.
 
 ## Trojan horse
 
-It is a program or software which looks legitimate one, but underneath the program is designed to steal the information or deletes the computer data.<br>
-Some trojan horse also creates back-doors in the computer systems.<br>
+It is a program or software which looks legitimate one, but
+underneath the program is designed to steal the information
+or deletes the computer data.<br>
+Some trojan horse also creates back-doors in the computer
+systems.<br>
 
 ### Worms
 
@@ -95,18 +113,35 @@ The best example of spyware would be keylogger, Adware, Trojan spyware.
 
 ## Denial of service attack
 
-It a malicious attempt to attack the availability of server hence data, in this attack attacker flood a organization's servers with multiple overwhelming request, server is sometimes tricked into believing that the requests are coming from legitimate users.<br>
-All the resources of the server are interrupted by those request and server is unable to handle the requests of its own users, due to which server becomes unavailable.<br>.
+It a malicious attempt to attack the availability of server
+hence data, in this attack attacker flood a organization's
+servers with multiple overwhelming request, server
+is sometimes tricked into believing that the requests are coming from
+legitimate users.<br>
+All the resources of the server are interrupted
+by those request and server is unable to handle the
+requests of its own users, due to
+which server becomes unavailable.<br>.
 
 ## Ransomware
 
-It is a type of malicious attack in which some how attacker gains the access to user data and encrypts all the files, In return attacker want ransom in order to get the decryption key to gain access to the system.<br>
+It is a type of malicious attack in which some how attacker gains the access to
+data and encrypts or steals all the files, In return attacker request for ransom
+in order to get the decryption key for encrypted data or data itself.<br>
 It is also intended to attack the availability of the data.<br>
+**There are usually two types of Ransomware attacks**
+
+1. **Data loss** : In this type of attack, the attacker steals data, and request for ransom in order to
+   provided the data back to victim.
+2. **Data breach** : In this type of attack, the attacker steals the data and
+   threatens vitcim to leak the data.
+3. **Data accessiblity attack** : In this , the attacker gain access to information and
+   encrypted it and request for ransom in order to give decryption key.
 
 ## Web attacks
 
 Those malicious attack which tends to attack the web-applications and web-servers, with an intent to exploit the vulnerabilities and steal data or destroy data.<br>
-There are various web-attacks like CSRF, XSS attack , SQLi attack.<br>
+There are various web-attacks like CSRF, DDOS ,XSS attack , SQLi attack.<br>
 
 **XSS attack** :
 In this attack attacker injects malicious client side script into web-pages without their consent, their main task is to steal the users information from that web-application.<br>

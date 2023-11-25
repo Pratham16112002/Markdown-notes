@@ -29,12 +29,11 @@ It governs, how the data is collected, shared & used, concerned with handling of
 * **Accountability**: _Principle_ The Organization should violate if any privacy policy principle is violated. _Policy_ Establish internal measuring techniques to monitor any privacy violation within the organization.
 * **Transparency** : _Principle_ Be transparent about the practices and policies. _Policies_ Privacy policies should be easily accessible to anyone and written in clear and direct language.
 
-### Privacy in email security 
+### Privacy in email security
 
-* **Encryption** : Ensure that content is unreadable to any third party without the decryption key. End to end encryption secure the message send from sender to recipent. 
-* **Use of secure protocols** : Employing secure communication protocols like ( TLS ), to ensure email are sent securely. 
-* **Strong authentication** : Implementing robust authentication methods like SPF, DKIM, etc. 
+* **Encryption** : Ensure that content is unreadable to any third party without the decryption key. End to end encryption secure the message send from sender to recipent.
+* **Use of secure protocols** : Employing secure communication protocols like ( TLS ), to ensure email are sent securely.
+* **Strong authentication** : Implementing robust authentication methods like SPF, DKIM, etc.
 * **User training & awareness** : Educating users about email scams that are bound to happen like suspicious links attachments or phishing attempts by attackers.
-* **Secure email services & tools** : Use reputable email services and applications that provide features like encryption, spam filters and malware scanning. 
-* **Regular software updates & patches** : Ensuring that the email servers are regularly updated. 
-
+* **Secure email services & tools** : Use reputable email services and applications that provide features like encryption, spam filters and malware scanning.
+* **Regular software updates & patches** : Ensuring that the email servers are regularly updated with the latest security patches.

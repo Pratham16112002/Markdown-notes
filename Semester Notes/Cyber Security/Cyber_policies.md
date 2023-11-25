@@ -7,13 +7,14 @@
 2. **Establish network access controls** : Organizations can implement security systems like zero trust, where all the users are continuously monitored before accessing any application or resource. This will prevent any malicious attack from happening from outside as well as inside the network. 
 3. **Implementing firewall and threat detection system** : Firewall and other threat detection systems will monitor your system & network and look for any potential attacks that can happen. 
 4. **Installing latest security patches** : Installing regular security updates helps to mitigate cyber risk, the faster the security loopholes are removed more harder it will be for attackers to exploit those loopholes. 
-5. **Conducting regular employee training** : Spreading awareness about how to identify and handle a cyber attack, Letting employees know about common attacks possible in this cyber world. 
+5. **Conducting reg
+ular employee training** : Spreading awareness about how to identify and handle a cyber attack, Letting employees know about common attacks possible in this cyber world. 
 6. **Minimizing attack surface** : All the potentially vulnerable spots or areas in a network or system should be monitored carefully or removed if possible.
 
 
 ## Reduce supply chain risk
 
-1. **Vender risk management** : Establishing a policies and strategies that secure the entire network as well as the third party vendors and partners based on their security standards. 
+1. **Vender risk management** : Establishing a policies and strategies that secure the entire network as well as the third party vendors and partners to maintian the security standards. 
 2. Testing the security measures of vendors including their data protection practices , cyber policies and incident response capabilities. 
 3. **Continous monitoring and auditing** : Developing policies for continuous monitoring and regular audits of vendor activities. 
 4. **Data encryption** : Implementing data encryption to sensitive information when being shared over the supply chains to protect it from unauthorized access.
