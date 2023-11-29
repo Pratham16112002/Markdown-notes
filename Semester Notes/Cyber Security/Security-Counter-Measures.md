@@ -36,8 +36,8 @@ traffic from entering the network.
 **Circuit level Firewalls** :
 
 It provides User Datagram Protocol and Transmission Control Protocol connection securly.
-Does not do packet inspection ( Data inside the packet is not monitored ).
-
+Does not do packet inspection ( Data inside the packet is not monitored ).  
+it is relatively quicker way of determing macious content in the data packets.  
 **Stateful Inspection Firewalls** :
 
 Also called _Dynamic Filtering_, this firewall can detect weather a packet
@@ -105,6 +105,7 @@ theft and alert the administrators about them to mitigate them.
 ### Intrusion prevention system
 
 It has the same functinonality that IDS does, the main difference between both of them is IPS actively defends the network by stopping the attack and also performs alert mechanisms (Tells the packet "You shell not Pass 😁".
+
 It also performs cyclic redundancy check (CRC), and packet defragmentation to clean and maintain the integrity of the data packets.
 
 ### Password cracking

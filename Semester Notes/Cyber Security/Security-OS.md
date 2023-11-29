@@ -144,8 +144,8 @@ $\color{#fd5c63}{Prevention : }$
 
 Wireless security are the mesasures and protocols to implemented to to
 protect wireless network from unauthorized access and stealing the data.  
-Though the information is encrypte but anyone can access that information
-if good authentication is not implemented.
+Though the information is encrypt but anyone can access that information
+if good authentication is not implemented and encryption is weak.
 
 #### WEP protocol
 

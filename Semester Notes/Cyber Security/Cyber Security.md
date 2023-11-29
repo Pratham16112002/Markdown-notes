@@ -44,7 +44,15 @@ Typically involves :
 
 1. Deception : The attackers sometimes impersonate as a trusted entity by sending fake email to the individual or organization .
 2. Bait : The attackers try to lure the victim by offering him/her very tempting offer or urgent emergency messages.
-3. Clicking link and attachment : Victims are usually asked to click on some link with redirect them to a website which is a counterfeit of the original website inorder to gain control over user information.
+
+<span style='color:yellow'>In all the below attacks attacker tricks the victim into beleiving that an trusted entity is communicating with them, by forging the message some how which tricks the user into revailing into disclosing their confidential information</span>
+
+**Types** :
+
+1. **Deceptive Phishing** : Type of bait attack, which is targeted to a large group of victim, attacker send the phising emails to all the victims hoping that any one would respond to attackers trap.
+2. **Spear Phishing** : This attack is usually targeted to a particular users, attacker has already some information about the user and then forge a phishing email with respect to the information known.
+3. **Whailing** : Similar type of spear phishing attack but performed on high-level executives.
+4. **Pharming** : Attack make the counterfiet of the original website and tricks the user into loading the fake website to gain access to the credentials of the original website.
 
 ## Malware
 
@@ -53,21 +61,21 @@ Are special software which are designed to gain unauthorized access or exploit c
 ### Virus
 
 A computer virus is a program which is used by attackers for malicious purpose, viruses has the ability replicate them-self and spread from one location to another in the computer system.<br>
-Often attaches itself to a legitimate program or files and spread through the computer device faster.<br>
-<br>
+Often attaches itself to a legitimate program or files and spread through the computer device faster.
+
 **Resident Virus** : This type of virus get stored in computer ram and
 and interfare with system operations. These type of viruses are very sneaky, because
-they attaches themselves to anti-virus software program files<br>
-<br>
+they attaches themselves to anti-virus software program files.
+
 **Multi-partite Virus** : This type fo virus inject the entrie computer system by
-performing unauthorized access.<br>
-<br>
+performing unauthorized access.
+
 **Direct Action Virus** : This type of virus attack a specific type of file only
 usually executables (.exe), these type of viruses are very easy to detect and remove.<br>
-<br>
+
 **Overwrite Virus** : This type of virus can overwrite content of a files or a
 folders.
-<br>
+
 **Boot Sector Virus** : This type of virus are easy to prevent because they spread through
 USB flash drives or infected email attachments, when activated it can also
 damage the boot record of the system.
@@ -83,14 +91,14 @@ Detected by code reviews.
 
 It is a program or software which looks legitimate one, but
 underneath the program is designed to steal the information
-or deletes the computer data.<br>
+or deletes the computer data.  
 Some trojan horse also creates back-doors in the computer
 systems.<br>
 
 ### Worms
 
-Type of computer malware.<br>
-Worms are more dangerous then viruses.<br>
+Type of computer malware.  
+Worms are more dangerous then viruses.  
 Both worms and viruses are malicious program a computer system, without the users consent and replicates themselves.<br>
 <span style='color:red;'>Main Difference between virus and worm</span>
 
@@ -107,7 +115,7 @@ Both worms and viruses are malicious program a computer system, without the user
 ### Adware & Spyware
 
 **Adware** : These are the malwares which are designed to display advertisement to the user, They are not usually harmful to the computer system but they tends to steal information about the users such as search history, apps he/she uses, etc.<br>
-Ads corresponding to users behaviour is shown to the user.<br>
+Ads corresponding to users behaviour is shown to the user.  
 **Spyware** : It is like a malicous softwares that spies on what the user is doing collect the information and provide it to the attacker, spyware unlike adware uses users device memory and keep running in the background.<br>
 The best example of spyware would be keylogger, Adware, Trojan spyware.
 
@@ -117,11 +125,11 @@ It a malicious attempt to attack the availability of server
 hence data, in this attack attacker flood a organization's
 servers with multiple overwhelming request, server
 is sometimes tricked into believing that the requests are coming from
-legitimate users.<br>
+legitimate users.  
 All the resources of the server are interrupted
 by those request and server is unable to handle the
 requests of its own users, due to
-which server becomes unavailable.<br>.
+which server becomes unavailable.
 
 ## Ransomware
 
@@ -129,7 +137,7 @@ It is a type of malicious attack in which some how attacker gains the access to
 data and encrypts or steals all the files, In return attacker request for ransom
 in order to get the decryption key for encrypted data or data itself.<br>
 It is also intended to attack the availability of the data.<br>
-**There are usually two types of Ransomware attacks**
+**There are usually three types of Ransomware attacks**
 
 1. **Data loss** : In this type of attack, the attacker steals data, and request for ransom in order to
    provided the data back to victim.
