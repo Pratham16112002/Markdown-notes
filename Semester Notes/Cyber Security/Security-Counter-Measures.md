@@ -38,12 +38,13 @@ traffic from entering the network.
 It provides User Datagram Protocol and Transmission Control Protocol connection securly.
 Does not do packet inspection ( Data inside the packet is not monitored ).  
 it is relatively quicker way of determing macious content in the data packets.  
+It makes sure that only authentice entities are communicating over in the network.  
 **Stateful Inspection Firewalls** :
 
 Also called _Dynamic Filtering_, this firewall can detect weather a packet
 belongs to a particular session or not. It will only permit the packet if it
-belong to a session between two endpoints.
-Can compromise the performance of the network.
+belong to a session between two endpoints.  
+Can compromise the performance of the network.  
 Examine each packet's data in the network.  
 Most secure network firewall.
 
@@ -85,13 +86,19 @@ theft and alert the administrators about them to mitigate them.
 
 ### Methods of IDS
 
-1. **Signature based IDS** : In this type IDS searches for source address, destination address, portocol, port number in each and every packet in the system or network.
-   A database is created for all the type of attack pattern that can occur in a packet. The pattern of each packet is then matched with the one in the database, if their exist a match then alarm is generated.This method is successfull in detecting known attacks but cannot identify known attacks. Manual Updation is required to add newly explored
+1. **Signature based IDS** : Best used to detect known threats, It operates by using a pre-programmed list of known threats called IOC ( Indicator of compromise ).  
+    IOC can be certain hashes, malcious domains, suspicous email subjects in term of email security.
+   security.  
+    In this type IDS searches for source address, destination address, portocol, port number in each and every packet in the system or network.
+   A database is created for all the type of IOC that can occur in a network.  
+    The pattern of each packet is then matched with the one in the database, if their exist a match then alarm is generated.This method is successfull in detecting known attacks but cannot identify known attacks.  
+   Manual Updation is required to add newly explored
    attack pattern to the to the pattern database.
-2. **Anomoy based detection** : Monitors the behavior of the system.
+2. **Anomoy based detection** : Integrates Machine Learning Algorithm, algorithm sets a baseline of the normal behavior of the system/network which represents how the system behaves normally, Monitors the behavior of the system.  
    If a behavior of the system is different from predefined behavior then a alarm is generated
    by the network.  
-   Suppose an employee which has certain access in a organization performs a activity which is not in scope of his/her capabilities then IDS will generate alarm.
+   Suppose an employee which has certain access in a organization performs a activity which is not in scope of his/her capabilities then IDS will generate alarm.  
+   Likely to generate false alarams if the IDS is not properly installed on the network or the system.
 
 ### Types of IDS
 
@@ -122,11 +129,11 @@ It is the method of using application programs to recover deleted or forgotten p
    _Rate limiting_ to prevent repetated login attempts.
 
 2. **Dictionary Attack** : In this type of attack, attacker maintains his/her own dictionary of all possible password combination.
-   The dictionary file is provided to password guessing application programs, the program tries all the words present in the dictionary hoping to get a password match.
-   Fast but limited by the words in the dictionary.
+   The dictionary file is provided to password guessing application programs, the program tries all the words present in the dictionary hoping to get a password match.  
+   Fast but limited by the words in the dictionary.  
    Can guess the password for specific length only.
 
-3. **Rainbow Table Attack** : The Attacker maintains a dictionary of all pre-compiled hashes called $\color{green}{Rainbow Tables}$, when the attacker gains control of all the password hashes, the attacker quickly look up for matches in the rainbow tables. If a match is found then attacker sees the corresponding plain text in the rainbow table.
+3. **Rainbow Table Attack** : The Attacker maintains a dictionary of all pre-compiled hashes called $\color{green}{Rainbow Tables}$, when the attacker gains control of all the password hashes, the attacker quickly look up for matches in the rainbow tables. If a match is found then attacker sees the corresponding plain text in the rainbow table.  
    Attackers need to know the hashing algorithm used for hashing.
 
 #### Cookie replay attack / Session Hijacking Attack
@@ -137,7 +144,7 @@ By intercepting cookies, an attacker can impersonate as a legitimate user and po
 
 **Prevention** :
 
-1. Always use HTTPS.
+1. Always use HTTPS to make sure cookies are transmitted only through encrypted channels.
 2. Secure cookies : enable the secure flag in the cookies to make sure that cookies are always transmitted over secure encrypted channel.
 3. Use Security Headers : use security headers like CSP (Content Security Policy).
 
@@ -150,7 +157,7 @@ Certainly database security is crucial for protecting sensitive information and 
 3. **Weak or Unpatched Softwares** : Software application with not the latest update always have known vulnerabilities that attacker will exploit them easily.
 4. **DDOS**
 5. **Privilege escalation** : People with a restricted privilege try to escalate their privilege to gain unauthorized access.
-6. **Secure database backups** : The backups of the database should be done and secured properly.
+6. **Secure database backups** : The backups of the database should be done and secured properly to make sure that reliable data can be recovered from the data backup in case of data loss/breach attack.
 
 ### SQL Injection attack
 
@@ -158,7 +165,7 @@ In SQL Injection attack, the attacker exploit the vulnerability of unhandled SQL
 **Blind SQL injection attack** : In this type of attack, in which attacker infer the information from the database without directly retriving data from the database.
 
 1. **Boolean type** : The Attacker crafts an sql query to either return true or false for a particular sql query.
-2. **Time-based type** : The Attacker crafts the sql query in a way which dely the response of the database when some condition is matched, from the response of web-application attacker, infers the information about the database.
+2. **Time-based type** : The Attacker crafts the sql query in a way which dely the response of the database on the web-application when some condition is matched, from the response of web-application attacker, infers the information about the database.
 3. **Error-based type** : The attacker crafts the sql query in a way which returns a particular error on the web-application when the certain condition is met.
 
 **Out-of-band Sql Injection attack** : The attacker crafts an sql query that redirect the database response to a third party like a fake website or files in the server.

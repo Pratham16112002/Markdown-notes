@@ -28,14 +28,14 @@ sender believes that response is comming from the legitimate receiver
 but instead the response has been modified by the attacker.
 
 These types of attacks usually occurs in public areas like cafes,
-malls, restaurants, etc.  
+malls, restaurants, etc where open network are present.  
 $\color{#fd5c63}{Prevention :}$
 
 1. By using HTTPs instead of HTTP.
 2. Network segmentation or isolation.
 3. By implementing DNS security.
 4. Keeping softwares up to dates.
-5. Using VPN's when connecting with organizations.
+5. Using VPN's when connecting with organizations remotely.
 
 ### Rootkits
 
@@ -72,7 +72,7 @@ system without knowledge of user.
   the normal computer application do, do not have direct
   access to the computer hardware resources.
 - **Installation** : They do not require administrative
-  privileges while installation can install with only standard permissions.
+  privileges while installation can be installed with standard permissions only.
 - **Removal** : It is easier to detect and remove User level root kits.
 - **Detection** : Can be easily detected by antivirus softwares or even normal users.
 
@@ -101,7 +101,7 @@ in the main memory.
 1. **Keep the softwares up to date** : Regular updates are necessary for latest
    security patches.
 2. **Secure Boot** : It is important security meachanism to prevent malicious
-   softwares from loading.
+   softwares or thrid party softwares from loading in computer systems.
 3. **Trusted sources** : Always rely on trusted websites or stores before
    downloading something.
 4. **Take Reguar Backups**
@@ -145,7 +145,11 @@ $\color{#fd5c63}{Prevention : }$
 Wireless security are the mesasures and protocols to implemented to to
 protect wireless network from unauthorized access and stealing the data.  
 Though the information is encrypt but anyone can access that information
-if good authentication is not implemented and encryption is weak.
+if good authentication is not implemented and encryption is weak.  
+The main functionality provided by this is to prevent the wifi network from malicous attempts.  
+Even if the access point is compromised, but the attacker wont be able to see the data in transit before of secure encryption algorithm.
+
+To Provide Confidentiality, Intigrity and authentication to the data transmitted by these wireless access there are some protocols implemented :👇
 
 #### WEP protocol
 
@@ -158,6 +162,7 @@ Wired Equivalent Privacy\*\*
 - Initialization vector is sent with the cipher text to the destination
 - All traffic in this protocol uses same static key.
 - The encryption algorithm used is every weak which is RC4 encryption.
+- Suceptible to Offline brute force attacks.
 
 ![WEP ](../../assets/WEP-ss.png)
 
@@ -165,7 +170,7 @@ Wired Equivalent Privacy\*\*
 
 Wifi protected access
 
-- It is better security protocol then WEP.
+- It is better security protocol then WEP, It is an successor to the WEP in terms of security and authentication.
 - It uses stronger encryption protocol like Temporial key Integrity
   Protocol(TKIP).
 - Uses dynamically generated key, which are different and unique for
@@ -174,22 +179,25 @@ Wifi protected access
   to match the one used to secure the network packets.
 - Uses MIC (Message Integrity Check) to make sure that attacker has not altered
   the packets of the network.
+- Later the TKIP was surpassed by advanced encryption standards algorithm which provided more security.
 
 WPA 2 :
 
 Provides stronger provides even stronger encryption algorithm then WPA.
 Uses Advanced Encryption Standard.  
 WPA 2 is designed to be backward compatible with WPA by introducing
-combination of TKIP + Avanced Encryption Standards.
+combination of TKIP + Avanced Encryption Standards.  
+Suceptible to _krack_ attack in which the attacker trys to create a clone network of an existing network and force the victim to the counterfeit of the original network instead of the original one.
 
 WPA 3 :
 
-- It is the most latest wireless protcol used today.
+- It is the most latest wireless protcol used today developed in 2018.
 - It used most secure ways to simplify the network security and enable
   most robust authentication.
-- Uses the most secure authentication called SAE (Simultaneous
-  Authentication of Equals).
+- Uses the most secure authentication protocol called SAE (Simultaneous
+  Authentication of Equals) in initial handshake protocol.
 - It is resistant to all brute force and password guessing attacks.
+- WPA2 lacks in built in encryption and privacy in case of open networks.
 - Also comes with the backward compatibility with previous versions of WPA's.
   Uses _DPP(Device Provisioning Protocol)_ which allows users to share the wifi
   key using OR codes and NFC's.
