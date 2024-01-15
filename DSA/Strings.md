@@ -1,7 +1,6 @@
-
 ### Sort Characters by frequency
 
-You have given a string sort it in descending order based on the frequency return the string . 
+You have given a string sort it in descending order based on the frequency return the string .
 
 I/P : **`abcAbc`**
 
@@ -11,8 +10,8 @@ O/P : **`bbccAa`**
 - Store all the characters along with their frequency .
 - Create a vector of pair
 
-> because we cannot sort a map using inbuilt sort method  .
-> 
+> because we cannot sort a map using inbuilt sort method .
+
 - Sort the vector in descending order of frequency .
 - Add the characters according to the frequency of chars .
 
@@ -24,7 +23,7 @@ unordered_map<char,int> mp;
 	vector<pair<char,int>> sortedVector(mp.begin(),mp.end());
 
 	sort(sortedVector.begin() , sortedVector.end() , [](const pair<char, int>& a, const pair<char, int>& b) {
-             return a.second > b.second; 
+             return a.second > b.second;
          });
 	string ans = "";
 	for(auto it : sortedVector){
@@ -35,13 +34,13 @@ unordered_map<char,int> mp;
 	return ans;
 ```
 
-Time Complexity : 
+Time Complexity :
 
 $$
 O \left( n  \right)  +O \left( m  \right)  +O \left( m \log\left( m  \right)    \right)   
 $$
 
-Space Complexity : 
+Space Complexity :
 
 $$
 O \left( n+m  \right)   
@@ -53,43 +52,40 @@ I/P : **`abccbc`**
 
 O/P : **`bccb`**
 
-There are multiple ways to solve this problem . 
+There are multiple ways to solve this problem .
 
-1. **Brute force** : Generating all the substring and checking each one of them for palindrome and get the longest one . 
-Time Complexity would be cubic 
-    
+1.  **Brute force** : Generating all the substring and checking each one of them for palindrome and get the longest one .
+    Time Complexity would be cubic
     $$
-    O \left( n \cdot  n \cdot  n  \right)   
+        O \left( n \cdot  n \cdot  n  \right)   
     $$
-    
-2. **Dynamic Programming** : The palindrome is a string which is common in normal string as well as the reverse of the same string . 
-We will find the Longest one with the longest common subsequence using dynamic programming algorithm . 
-**Time complexity :** 
+2.  **Dynamic Programming** : The palindrome is a string which is common in normal string as well as the reverse of the same string .
+    We will find the Longest one with the longest common subsequence using dynamic programming algorithm .
+    **Time complexity :**
 
-    
-    $$
-    O \left( n \cdot  n  \right)   
-    $$
-    
-3. **Optimal Method** : 
+        $$
+        O \left( n \cdot  n  \right)   
+        $$
+
+3.  **Optimal Method** :
 
 - Iterate over the string .
-- Assume two pointers left and right assigned to current index . 
-move them until we find the palindrome . 
-get the maximum Length while traversing .
-- Assume two pointers left assigned to current index and left assigned to current index + 1 
-move them until we find the palindrome get the maximum Length while traversing .
+- Assume two pointers left and right assigned to current index .
+  move them until we find the palindrome .
+  get the maximum Length while traversing .
+- Assume two pointers left assigned to current index and left assigned to current index + 1
+  move them until we find the palindrome get the maximum Length while traversing .
 - Return the final substring .
 
 ```cpp
-int start = 0 ; //  position of string 
-        int maxLen = 1 ;  // length of the substring 
+int start = 0 ; //  position of string
+        int maxLen = 1 ;  // length of the substring
         if( s.size() == 1){
             return s;
         }
         int left , right;
         for(int i = 0 ; i<s.size() ;i++){
-            // checking for even length palidromes 
+            // checking for even length palidromes
             left = i ;
             right = i + 1;
             while(left >= 0 && right < s.size() &&  s[left] == s[right]){
@@ -100,7 +96,7 @@ int start = 0 ; //  position of string
                 left--;
                 right++;
             }
-            // checking for odd length palindrome 
+            // checking for odd length palindrome
             left = right = i ;
             while(left >= 0 && right < s.size() && s[left] == s[right]){
                 if(right - left + 1 > maxLen){
@@ -114,7 +110,7 @@ int start = 0 ; //  position of string
         return s.substr(start,maxLen);
 ```
 
-**Time Complexity :** 
+**Time Complexity :**
 
 $$
 O \left( n \cdot  n  \right)   
@@ -153,7 +149,7 @@ void help(string &lca , string test){
 }
 ```
 
-Time Complexity : 
+Time Complexity :
 
 $$
 O \left( n \cdot  m  \right)   
@@ -165,14 +161,10 @@ I/P : `s = "egg", t = "add"`
 O/P : `true`
 
 - We will create two map of <char,char> .
-    
-    first one will store all the string s to string t mappings . 
-    
+  first one will store all the string s to string t mappings .
 - Run a for loop .
-    
-    We will do the mapping the the respective maps. 
-    With an If condition which will check weather the current mapping exist either of the maps , if it does then checking if the current character is similar to the previous one or not . 
-    
+  We will do the mapping the the respective maps.
+  With an If condition which will check weather the current mapping exist either of the maps , if it does then checking if the current character is similar to the previous one or not .
 
 ```cpp
 bool isIsomorphic(string s, string t) {
@@ -180,7 +172,7 @@ bool isIsomorphic(string s, string t) {
      for(int i = 0 ; i<s.size() ; i++){
          char sTt_char = s[i];
          char tTs_char = t[i];
-         
+
         if(sTt.find(sTt_char) != sTt.end() && sTt[sTt_char] != tTs_char){
             return false;
         }
@@ -190,18 +182,18 @@ bool isIsomorphic(string s, string t) {
 
          sTt[s[i]] = tTs_char;
          tTs[t[i]] = sTt_char;
-     } 
+     }
      return true;
     }
 ```
 
-Time Complexity : 
+Time Complexity :
 
 $$
 O \left ( n \right)
 $$
 
-Space Complexity : 
+Space Complexity :
 
 $$
 O \left( n+n  \right)   
@@ -209,19 +201,19 @@ $$
 
 ### Check weather strings are anagram or not
 
-I/P : 
+I/P :
 
 `string s1 = "gram";
 string s2 = "arm";`
 
 O/P : `“no”`
 
-Approach : 
+Approach :
 
-1. check the lengths of the two strings given 
+1. check the lengths of the two strings given
 2. if the lengths are unequal then return false.
-3. sort both the strings 
-4. Traverse both the strings simultaneously if any mismatch is found then return false else return true. 
+3. sort both the strings
+4. Traverse both the strings simultaneously if any mismatch is found then return false else return true.
 
 ```cpp
 int n1 = s1.length();
@@ -245,8 +237,56 @@ Time complexity : $O(nlogn + mlogm + n)$ , Space complexity : $O(1)$.
 ### Anagrams
 
 Two strings are said to be anagrams if : <br>
-1. One string can become another string and vice-versa. 
+
+1. One string can become another string and vice-versa.
 2. Frequency of each character in the strings is same.
-3. Size of strings should be same as well. 
+3. Size of strings should be same as well.
 
+## Valid palindrome
 
+I/P : -
+`js = "A man, a plan, a canal: Panama"`
+
+O/P : `true`
+
+> Make sure that you can also encounter non alphanumeric characters also so handle them as well.
+
+**Thinking** :
+
+1. We can use two pointers approach to solve this problem.
+2. Move both the pointers until start pointer is less than or equal to the end pointer.
+3. Skip the characters which are not alphanumeric.
+
+**Logic**for**not**aplphanumeric\_\_:
+
+```cpp
+bool isAlphanumeric(char c) {
+  return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ||
+         (c >= '0' && c <= '9');
+}
+```
+
+**Code** 💻:
+
+```cpp
+bool isPalindrome(string s) {
+  int start = 0, end = s.size() - 1;
+  while (start < end) {
+    while (start < end && !isAlphanumeric(s[start])) {
+      start++;
+    }
+    while (end > start && !isAlphanumeric(s[end])) {
+      end--;
+    }
+    if (tolower(s[start]) != tolower(s[end])) {
+    }
+    start++;
+    end--;
+    return false;
+  }
+
+  return true;
+}
+```
+
+Time complexity : $O(n)$, Space complexity is constant.

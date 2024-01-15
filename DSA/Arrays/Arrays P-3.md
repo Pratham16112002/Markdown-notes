@@ -291,7 +291,7 @@ Time complexity : $ O(nlogn+n^2)$ with constant space.
 
 - ![Rainwater trap]('../../../../assets/Rainwatertrap.png).
 
-$$ Ans =  max \left( maxL \left| maxR  \right|    \right)  -H  $$
+$$ Ans = max \left( maxL \left| maxR \right| \right) -H $$
 
 **Code** :
 
@@ -316,3 +316,212 @@ $$ Ans =  max \left( maxL \left| maxR  \right|    \right)  -H  $$
 ```
 
 Time complexity : $ O(3n) $ , Space complexity : $ O(2n) $ &rarr; $ O(n) $. <br>
+
+## Frequency of the Most Frequent Element
+
+I/P : `nums = [1,4,8,13], k = 5`  
+O/P : `2`
+
+> You have only 5 operations to perform on the given array elements.  
+> You can only increase the value of the array elements.
+
+$$ Max \cdot winSize > = Total+k$$
+
+**Max** : The element we are trying to make equal to.  
+**Total** : The sum of all the elements in the window.  
+**winSize** : the size of the window.
+
+> We need to sort the array first.
+
+**Thinking** :
+
+- First we will sort the given array.
+- Take two pointer to represent the window.
+
+**Approach** :
+
+```cpp
+int maxFrequency(vector<int>& nums, int k) {
+        long long ans = 0;
+        long long total = 0;
+        sort(nums.begin(),nums.end());
+        long long l = 0 , r = 0;
+        while(r < nums.size()){
+            total += nums[r];
+            while(nums[r]*(r-l+1) > total + k){
+                total -= nums[l];
+                l++;
+            }
+            ans = max(ans,(r-l+1));
+            r++;
+        }
+        return ans;
+    }
+
+
+```
+
+Time complexity : $O(nlogn)$ , Space complexity is constant.
+
+## Check sorted & rotated array
+
+I/P : `nums = [3,4,5,1,2]`  
+O/P : `true`
+
+Explanation : The array is sorted and rotated.
+
+Thinking :
+
+- We need to find any valley point in the array.
+- We need to check for valleys with this formula $ nums[i] > nums[(i+1) % n] $, To compare the first element to the last element in the given array.
+
+Approach :
+
+```cpp
+bool check(vector<int>& nums) {
+        int count = 0 ;
+        for(int i = 0 ; i<nums.size() ; i++){
+            if(nums[i] > nums[(i+1)%nums.size()]){
+                count++;
+            }
+            if(count > 1) return false;
+        }
+        return true;
+    }
+```
+
+Time complexity : $O(n)$ , Space complexity : $O(1)$.
+
+## Rotate the array by K steps
+
+I/P : `nums = [1,2,3,4,5,6,7] , k = 3`
+
+O/P : `[5,6,7,1,2,3,4]`
+
+Brute Approach :
+
+- Store the end k elements in another vector.
+- Adding the k elements before the rest of the elements in the given array.
+
+Time complexity : $O(n)$, Space complexity : $O(k)$.
+
+Best Approach :
+
+- find the required rotation we need to do which the formula $ k = k % n $.
+- Reverse the array from 0 to k - 1.
+- Reverse the array from k to n-1.
+- Reverse the entire array.
+
+Approach ::
+
+```cpp
+void reverse_arr(vector<int> &arr, int low, int high) {
+  while (low <= high) {
+    swap(arr[low], arr[high]);
+    low++;
+    high--;
+  }
+}
+
+void rotate_by_k(vector<int> &arr, int k) {
+  int k_left = arr.size() - k;
+  reverse_arr(arr, 0, k_left - 1);
+  reverse_arr(arr, k_left, arr.size() - 1);
+  reverse(arr.begin(), arr.end());
+}
+```
+
+Time complexity : $O(n)$ , Space complexity is constant.
+
+## Sort colors
+
+You will be given an array containing only 0's, 1's and 2's.
+
+Input : `nums = [2,0,2,1,1,0]`  
+Output : `[0,0,1,1,2,2]`
+
+Brute Approach : Simply sort the given array using any sorting algorithm.
+
+Better Approach : Counting the 0's, 1's and 2's and then filling the array with the count of 0's, 1's and 2's.mid++;
+
+Optimal Approach : Using **Dutch National Flag Algorithm**.
+
+```cpp
+ void sortColors(vector<int>& nums) {
+        int low = 0 , mid = 0 , high = nums.size() - 1;
+        while(mid <= high) {
+            if(nums[mid] == 0) {
+                swap(nums[mid],nums[low]);
+                low++;
+                mid++;
+            }
+            else if(nums[mid] == 1) {
+                mid++;
+            }
+            else {
+                swap(nums[mid],nums[high]);
+                high--;
+            }
+        }
+    }
+```
+
+Time complexity : $O(n)$ , Space complexity is constant.
+
+## Find majority element
+
+I/P : `nums = [3,2,3]`  
+O/P : `3`
+
+Brute Force Solution : Using two loops and checking for the majority element.  
+if any element count greater than n/2 is found then return that element.-
+
+Code :
+
+```cpp
+int majorityElement(vector<int>& nums) {
+        int ans = -1;
+        for(int i = 0 ; i<nums.size() ; i++){
+            int cnt = 0;
+            for(int j = 0 ; j<nums.size() ; j++){
+                if(nums[j] == nums[i]){
+                    cnt++;
+                }
+                if(cnt > (nums.size()/2)){
+                    ans = nums[i];
+                    break;
+                }
+            }
+        }
+        return ans;
+    }
+```
+
+Time complexity : $O(n^2)$ , Space complexity is constant.
+
+Better Approach : Using map to store the count of various elements in the array.
+
+Optimal approach : **Boyer Moore Voting Algorithm**
+
+## Kadane's algorithm
+
+Used to find maximum sum sub-array in an given array.
+
+Approach :-
+
+```cpp
+int maxSubArray(vector<int>& nums) {
+        int curr_sum = 0 , maxi_sum = -1e9  ;
+        for(int i = 0 ; i<nums.size() ; i++) {
+            curr_sum += nums[i];
+             maxi_sum = max(curr_sum, maxi_sum);
+            if(curr_sum < 0) {
+                curr_sum = 0;
+            }
+
+        }
+        return maxi_sum;
+    }
+```
+
+Time complexity : $O(n)$ , Space complexity : $O(1)$.

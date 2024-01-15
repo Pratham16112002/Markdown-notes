@@ -2,7 +2,14 @@
 
 A javascript superset .
 
+It was created by microsoft
+
 Add new features and advantages to normal javascript.
+
+| Static Language                                | Dynamic Language                                      |
+| ---------------------------------------------- | ----------------------------------------------------- |
+| Variables are defined within a domain.         | Variables are not defined within a particular domain. |
+| Type of variables is known at the compile time | Type of variable is determined at the runtime.        |
 
 Browser’s can’t execute it .
 
@@ -184,11 +191,18 @@ const [hobby1, hobby2, ...remaining] = hobbies;
 
 remaining will be the containing all the remaining array element from the hobbies array.
 
+> In array destructuring the order of the variables matters, but where as the case of object destructuring the key-name matters the most.
+
 ```tsx
-const { package: Top } = pratham;
+const person = {
+  fullName: "Burgir",
+  age: 21,
+};
+
+const { fullName, age } = person;
 ```
 
-👆 package will be the aliased as Top everywhere.
+👆This is how we destructure an object.
 
 ## Combining two type
 
@@ -199,7 +213,7 @@ The data type of the resultant object or variable with be of intersection type.
 ```tsx
 type Admin = {
   name: string;
-  priveleges: string[];
+  preivileges: string[];
 };
 
 type Employee = {
@@ -211,7 +225,7 @@ type ElevatedEmployee = Admin & Employee;
 
 const e1: ElevatedEmployee = {
   name: "Pratham",
-  priveleges: ["can do anything", "can do 7 pull ups"],
+  privileges: ["can do anything", "can do 7 pull ups"],
   startDate: new Date(),
 };
 ```
@@ -617,3 +631,152 @@ const handlePasswordChange = (e: ChangeEvent<HTMLInputElement>) => {
 ```
 
 > **ChangeEvent** must be imported from react.
+
+## Let vs const
+
+**let** : Any variable created with let keyword can be redefined to any other value.  
+**const** : Any variable created with const keyword can not be refined/changed any time, it is a only default value of a particular variable.  
+**var** : Any variable created using var only has function or global scope similar to the let variable.
+
+> let allows you to create variables that are limited to scope of a block statement , or expression on which it is used.
+
+_In general we should use let over var._
+
+## Arrow functions
+
+`const printOutput = (output: string | number) => console.log(output);`
+
+or
+
+`const printOutput: (a: number | string) => void = (output) =>
+  console.log(output);`
+
+## Default parameter
+
+When we want to assign a default value to a parameter of a function we use default parameters.
+
+```tsx
+const add = (a: number, b: number = 1) => {
+  return a + b;
+};
+```
+
+**while passing the parameters to the function order matters the most**  
+👆 we cannot do this :
+
+```tsx
+const add = (a: number = 1, b: number) => {
+  return a + b;
+};
+
+// and call it like this
+add(2);
+```
+
+This will give error because the default parameter should be at the end of the parameter list.
+
+## Spread Operator
+
+`...`
+
+- This is the spread operator in typescript , it is used to spread the elements of an array or object.
+
+```tsx
+const hobbies = ["Sports", "Cooking"];
+
+const activeHobbies = ["Gaming"];
+
+activeHobbies.push(...hobbies);
+console.log(activeHobbies);
+```
+
+## Rest parameter
+
+When the number of parameters are not known or can very then we use the rest parameters.
+
+```tsx
+const add = (...numbers: number[]) => {
+  return numbers.reduce((curResult, curValue) => {
+    return curResult + curValue;
+  }, 0);
+};
+
+console.log(add(5, 10, 2, 3.7));
+```
+
+## Constructor function
+
+It is a special method which is created when ever an object is created for that particular class.
+
+_Constructor_ is a special keyword defined in typescript.
+
+```tsx
+class Department {
+  name: string;
+  constructor(n: string) {
+    this.name = n;
+  }
+}
+
+const testing = new Department("Testing");
+console.log(testing);
+```
+
+**this** keyword refers to the current object that is created in a class.
+
+```tsx
+const hello = { describe: testing.describe };
+
+hello.describe();
+```
+
+This will given an undefined in the console log statement because the this keyword will refer to the hello object which does not have the name property.
+
+![this keyword](../assets/thistypescript.png)
+
+To avoid this type of error during the runtime we can define the describe function like this :
+
+```tsx
+ describe(this: Department) {
+    console.log("Department: " + this.name);
+  }
+```
+
+👇 This means that the describe function will always be called on a object of type Department.
+
+> when we are including the script tag to link our javascript file we add a argument _defer_ to make sure that DOM is loaded on the web-browser before loading the actual script file.
+
+_In javascript array.unshift is method which is used to insert an element at the beginning of the array_.
+
+`let strictArray: [string, number, boolean] = ["Pratham", 2, false];`
+
+☝️ We can also add this index strictness to the arrays as well.
+
+**The main difference between interface and types in typescript is** :
+
+Interface can inherit from other interfaces were as type are not supposed to do that.
+
+Use types most of the time unless u need a functionality like extending.
+
+**readonly** : This keyword is used to make a variable only readable not editable.
+
+To assign data types to the object keys when can do 👇
+
+```tsx
+interface transactionObj {
+  [index: string]: number;
+}
+```
+
+**Keyof** : This operator takes object as type and produces an union of all the keys in that object.
+
+### Utility types
+
+**Partial Type `Partial<Type>`** : Constructs a type with all properties of Type set to optional. This utility will return a type that represents all subsets of given type.
+
+**Required Type `Required<Type>`** : Constructs a type consisting all the properties of Type set to required.
+
+**Record Type `Record<Keys,Type>`** : Constructs a type with a set of property keys are of type _Keys_ and Values are of type _Type_.
+
+**Pick Type `Pick<Type,Keys>`** : Constructs a type with limited number of keys specified in the keys.  
+**Pick Type `Omit<Type,Keys>`** : Constructs a type by excluding the specified keys from the type.
